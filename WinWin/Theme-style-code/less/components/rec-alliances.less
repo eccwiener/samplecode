@@ -1,0 +1,118 @@
+/***
+
+  RECOMMENDED ALLIANCE appear on the sidebar of the Business's alliances section.
+  This component is used by the business to fill their recommended tab.
+
+***/
+
+
+.rec-industry{
+  width:83%; 
+  margin-left:27px;
+  margin-top: -55px;
+  .pick-industry{
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #ececec;
+  height:100%; 
+  margin-bottom:40px; 
+  padding: 10px;
+
+    p.text-center{
+      font-size: 12px;
+      font-family: 'TradeGothicNextW01-Bold 693229';
+    } 
+
+    .radio-wrapper{
+      text-align: left;
+      margin-left: 60px;
+
+      label{
+        font-size: 12px;
+        font-family: 'TradeGothicNextW01-Bold 693229';
+        color: #000;
+      }
+    }
+
+    .btn-group .btn + .btn{
+      margin-left: 5px;
+    }
+
+  }
+  button {
+    #gears{
+      position:absolute;
+      z-index:1;
+    }
+    &:hover,
+    &:focus{
+      outline: none !important;
+    }
+    &.join-alliance{
+        width: 100%;
+        border: none;
+        background-color: #18517F;
+    }
+  }
+button.join-alliance:hover {
+  background-color:#0c395d; 
+}
+}
+
+#btnRecommended.btn.join-alliance {
+  background: url("/WinWinTheme-theme/images/gear-black.png") no-repeat 50% 13px;
+  max-width: 5%;
+  color: transparent;
+  position: absolute;
+  padding:25px;
+  left: -60px;
+    top:6px;
+  border-radius: 12px;
+  max-height: 50px;
+}
+.rec-industry p {
+  position: absolute;
+  top: 18px;
+  left: -155px;
+  font-size: 8px;
+}
+#btnRecommended.btn.join-alliance:hover {
+  background: url("/WinWinTheme-theme/images/gear-blue.png") no-repeat 50% 13px;
+}
+
+/*responsive rec button */
+@media (max-width: 992px) {
+  #btnRecommended.btn.join-alliance {
+    font-size: 12px;
+    padding-left: 18%;
+  }
+  .rec-industry {
+    .checkbox {
+    margin-left:-30px;
+    }
+    .btn{
+    margin:0px; 
+    font-size:10px;
+    height:30px;
+    padding:6px 12px;  
+    }
+    .btn-warning{
+    width:100px;
+    } 
+}
+}
+@media (max-width: 400px) {
+.rec-industry .pick-industry {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #ececec;
+  height: 100%;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+
+}

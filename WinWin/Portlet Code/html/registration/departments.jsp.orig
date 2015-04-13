@@ -1,0 +1,27 @@
+<div class="tab-pane" id="departments">
+<<<<<<< HEAD
+	<form role="form">
+		departments go here
+	</form>
+=======
+                    <form role="form">
+	                	<div class="form-group">
+						    <label for="dept">Department Name</label>
+						    <input type="text" class="form-control" name="dept_name" id="dept" placeholder="Department Name" autocomplete="off" ng-model="newDepartment.departmentName">
+						</div>
+                        <div class="form-group">
+                            <label>Primary Location <span class="glyphicon glyphicon-question-sign" tooltip-placement="right" tooltip="Don't see a location? Add a new one under the Manage Locations Tab"></span></label>
+                            <div class="styled-select" disabled>
+                                <select class="form-control">
+                                    <option value="">Choose Existing Location</option>
+                                </select>
+                            </div>
+                        </div>
+
+						<p class="text-right">
+	                        	<a href="#" data-dismiss="modal" ng-click='clearDepartmentPopup()' class="btn-cancel">Cancel</a>
+	                        	<button type="submit" data-dismiss="modal" class="btn btn-submit" ng-click="saveDepartment()">Add Department</button>
+                       	</p>
+                    </form>
+>>>>>>> 98914908e9b1b69e3d63e169884be9577b665ff3
+</div>

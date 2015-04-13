@@ -1,0 +1,53 @@
+<<<<<<< HEAD
+<div class="business-address-info row">
+  	<div class="col-sm-8">
+    	<div class="row">
+		    <div class="form-group">
+		      <label class="control-label" for="business-address">First Name:</label>
+		      <input type="text" class="form-control" id="firstName" ng-model="employee.firstName">
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="business-address-info row">
+    <div class="col-sm-8">
+      	<div class="row">
+	        <div class="form-group">
+	          <label class="control-label" for="business-city">Last Name</label>
+	          <input type="text" class="form-control" id="lastName" ng-model="employee.lastName">
+	        </div>
+      	</div>
+    </div>
+</div>
+<div class="business-address-info row">
+    <div class="col-sm-8">
+      	<div class="row">
+	        <div class="form-group">
+	          <label class="control-label" for="business-state">Email</label>
+	          <input type="text" class="form-control" id="email" ng-model="employee.email">
+	        </div>
+      	</div>
+    </div>	
+</div>
+
+<div class="btn-content text-right">
+  <button type="submit" class="btn btn-orange">Save</button>
+=======
+<div class="tab-pane active" id="emp-bus-info">
+	<form role="form">
+            <div class="form-group">
+                <label class="control-label">Business Name:</label>
+             <angucomplete id="business-name"
+                pause="100"
+                localdata="businesses"
+                selectedobject="selectedBusinesses"
+                searchfields="name"
+                titlefield="name"
+                descriptionfield="address"
+                minlength="1"
+                arrowImage="autocomplete-blue-arrow.jpg"
+                inputclass="form-control form-control-small"/>
+            </div>
+    </form>
+>>>>>>> 98914908e9b1b69e3d63e169884be9577b665ff3
+</div>

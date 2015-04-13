@@ -1,0 +1,54 @@
+<div class="modal fade" id="preview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-button"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></span>
+            </div>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+            </div>
+            <div class="modal-body">
+                <div class="col-lg-4 logo">
+                    <img src="/WinWinTheme-theme/images/assets/basics-preview.jpg" class="img-responsive" alt=""/>
+                    <a class="btn btn-primary" href="#">Visit Business Page</a>
+                </div>
+
+                <div class="info col-lg-5">
+                    <h1>{{businessDetail.name}}</h1>
+                    <ul class="result-bus-info">
+                        <li>Industry:  Entertainment</li>
+                        <li>Region: Northern</li>
+                        <li>Addres: {{businessDetail.street}} {{businessDetail.city}}, {{businessDetail.state}} {{businessDetail.zip}}</li>
+                        <li class="common-alliance">Alliances: 123</li>
+                        <li>Common Allies: 0</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 iconology">
+                    <img class="img-responsive center-block" src="/WinWinTheme-theme/images/assets/preview-icon.jpg" alt="">
+                </div>
+
+                <ul class="result-action-list">
+                    <li>
+                        <div id="request{{businessDetail.businessId}}">
+                            <span class="glyphicon glyphicon-diamond"></span>
+                            <a ng-click="sendAllianceRequest($event, businessDetail.businessId);" class="request first" data-loading-text="Request Pending...">
+                                Request Alliance 1
+                            </a>
+                        </div>
+                        <div id="requested{{businessDetail.businessId}}" style="display: none">
+                            Request Alliance 2
+                        </div>
+                    </li>
+                    <li><a ng-click="sendMessage($event, businessDetail.businessId);">Send Message</a></li>
+                    <li><a href="#">Share With Allies</a></li>
+                </ul>
+
+                <div class="clearfix"></div>
+
+                <h4>About Company</h4>
+                <p>{{businessDetail.aboutUs}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="modal fade styled-modal win-modal" id="addLocation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-button"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></span>
+            </div>
+                <h3 class="modal-title" id="myModalLabel">Add Location</h3>
+            </div>
+            <div class="modal-body">
+              <p>Use this form to add an additional location to the business. The email address entered below is for the new user who will be managing this location and must be unique on WinWinUSA. A notification will be sent to the email address provided. </p>
+                <div class="row">
+                    <form id="add-location" name="locationForm" method="post">
+                    	<!-- <div class="form-group">
+                            <label for="loc_name">Location Name</label>
+                            <input type="text" class="form-control" name="name" id="loc_name" autocomplete="off" required
+                            ng-model="newLocation.name"
+                            >
+                        </div>-->
+                        <div class="form-group required">
+                            <label class="control-label">Email Address:</label>
+                            <input type="text" class="form-control" name="email" ng-model="newLocation.email" autocomplete="off" required>
+                        </div>
+                        <div class="form-group required">
+                            <label for="loc_street" class="control-label">Street Address:</label>
+                            <input type="text" class="form-control" name="street" id="loc_street"  autocomplete="off" ng-model="newLocation.street" required>
+                            <!--  <p class="text-danger" ng-show="locationForm.street.$error.required && !locationForm.street.$pristine">Street required</p>-->
+                        </div>
+                        <!--
+                        <div class="form-group">
+                            <label for="loc_street2">Street 2</label>
+                            <input type="text" class="form-control" name="street2" id="loc_street2" placeholder="Street 2" autocomplete="off" ng-model="newLocation.street2">
+                        </div>
+                        -->  
+                        <div class="form-group required">
+                            <label for="loc_postalCode" class="control-label">Zip Code:</label>
+                            <input type="text" class="form-control" name="zip_code" id="loc_postalCode" autocomplete="off" ng-model="newLocation.postalCode" required>
+                            <!-- <p class="text-danger" ng-show="locationForm.zip_code.$error.required && !locationForm.zip_code.$pristine">Zip Code required</p>-->
+                        </div>                
+                        <div class="form-group required">
+                            <label for="loc_city" class="control-label">City:</label>
+                            <input type="text" class="form-control" name="city" id="loc_city"  autocomplete="off" ng-model="newLocation.city" required>
+                            <!--<p class="text-danger" ng-show="locationForm.city.$error.required && !locationForm.city.$pristine">city required</p>  -->
+                        </div>
+                        <div class="form-group required">
+                            <label for="loc_state" class="control-label">State:</label>
+                            <input maxlength="2" type="text" class="form-control" name="state" id="loc_state"  autocomplete="off" ng-model="newLocation.state" required>
+                            <!--  <p class="text-danger" ng-show="locationForm.state.$error.required && !locationForm.state.$pristine">State required</p>-->
+                        </div>
+                       
+                        <p class="text-right">
+                        	<a href="#" data-dismiss="modal" ng-click='clearLocationPopup()' class="btn-cancel">Cancel</a>
+                        	<button type="submit" data-dismiss="modal" class="btn btn-submit" ng-click="saveLocation()">Send</button>
+                       	</p>                                 
+                    </form>
+                </div>
+            </div><!-- end .modal-body -->
+        </div><!-- end .modal-content -->
+    </div><!-- end .modal-dialog -->
+</div><!-- end .modal -->

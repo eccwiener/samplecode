@@ -1,0 +1,57 @@
+/***
+
+  COMMUNITY POSTS appears under the following sections
+
+    1. Creation Zone
+    2. Community Posts in profile
+
+
+  community posts are a grid of block with icons.
+
+***/
+
+
+/* content blocks*/
+.block-content {
+  width: 100%;
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 0;
+  height: 800px;
+}
+.block-content:after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+}
+.single-block {
+  font-size: 14px;
+  text-align: center;
+  color: #6d6d6d;
+  font-weight: bold;
+  position: relative;
+  float: left;
+  z-index: 2;
+  margin-bottom: 35px;
+  padding: 0 8px;
+}
+.single-block.active .icons-wrapper,
+.single-block:hover .icons-wrapper,
+.single-block:focus .icons-wrapper {
+  cursor: pointer;
+  background: #408fd2;
+}
+.icons-wrapper {
+  display: table;
+  border: 10px solid #eaeaea;
+  background: #c2c2c2;
+  width: 152px;
+  height: 152px;
+  margin: 0 auto;
+}
+.icons-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+

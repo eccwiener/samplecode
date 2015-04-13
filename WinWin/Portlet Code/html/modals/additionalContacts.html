@@ -1,0 +1,58 @@
+<div class="modal fade styled-modal" id="addContacts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-button"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></span>
+            </div>
+              <!--  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+                <h3 class="modal-title" id="myModalLabel">Additional Contact</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form role="form" name="additionalForm">
+                        <div class="form-group has-success has-feedback">
+                            <label class="control-label" for="contactTitle">Title:</label>
+                            <input type="text" ng-model="newContact.title" class="form-control" name="title" required>
+                            <p class="text-danger" ng-show="additionalForm.title.$error.required && !additionalForm.title.$pristine">Title required</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactName">Name:</label>
+                            <input type="text" ng-model="newContact.name" class="form-control" name="name" required>
+                            <p class="text-danger" ng-show="additionalForm.name.$error.required && !additionalForm.name.$pristine">Name required</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email:</label>
+                            <input type="text" ng-model="newContact.email" class="form-control" name="email" required>
+                            <p class="text-danger" ng-show="additionalForm.email.$error.required && !additionalForm.email.$pristine">Email required</p>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-sm-9">
+                                <div class="fields-group">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="control-label" for="phoneNumber">Phone Number:</label>
+                                            <input type="text" ng-model="newContact.phone" class="form-control" name="phoneNumber" required>
+                                            <p class="text-danger" ng-show="additionalForm.phoneNumber.$error.required && !additionalForm.phoneNumber.$pristine">Phone Number required</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label for="phoneExt">Ext:</label>
+                                        <input type="text" ng-model="newContact.phoneExt" class="form-control" name="phoneExt">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-right">
+                        	<a href="#" data-dismiss="modal" ng-click='clearContactPopup()' class="btn-cancel">Cancel</a>
+                            <button type="submit" data-dismiss="modal" class="btn btn-submit" ng-click='addContact()' ng-disabled="additionalForm.$invalid">Save</button>
+                    	</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

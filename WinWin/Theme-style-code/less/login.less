@@ -1,0 +1,554 @@
+#signinmodal{
+  border-radius:0;
+  .modal-header{
+    h3{
+      font-weight:500;
+    }
+    background: #2aaae6 !important;
+    color: #FFF;
+  }
+  .modal-body{
+    background-color: #f0f0f0;
+    .control-group{
+      input{
+        width:100%;
+        height:40px;
+      }
+    }
+  }
+}
+.login-btn a{
+  padding:0 !important;
+}
+
+/* LOGIN SIGN IN PAGE */ 
+
+/*start login tabs */
+#loginTabs {
+  width: 100%;
+  float: left;
+  margin-left: -20px;
+  position: absolute;
+  border: none;
+  top: -65px;
+   ul {
+    border: none;
+    }
+     li {
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-right: 2px;
+    text-align: center;
+    font-size: 11px;
+    width: 30%;
+    border-radius: 5px 5px 0px 0px;
+    }
+     li a {
+     color: #FFF;
+    border-radius: 5px 5px 0px 0px;
+    background-color: black;
+    border: none;
+    min-width: 160px;
+    font-size:11px;
+    padding-left: 18px;
+    padding-right: 18px;
+    }
+     li.active a {
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    }
+    li a:hover {
+    background-color: #FFF;
+    color: #000;
+    border-radius: 5px 5px 0px 0px;
+    }
+  }
+
+/*end login tabs */
+
+.img-responsivw {
+  margin: 20px;
+  width: 100%;
+  margin-top: -90px;
+}
+
+/*begin login container */
+
+.portlet-boundary_58_.portlet-static.portlet-borderless.portlet-login.login-hook .img-responsivw {
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+  float: right;
+  position: absolute;
+  left: 600px;
+  margin-top: -250px;
+  max-width: 250px;
+}
+.portlet-boundary_58_.portlet-static.portlet-static-end.portlet-login .img-responsivw {
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+  float: right;
+  position: absolute;
+  right: 0%;
+  margin-top: -250px;
+  max-width: 250px;
+}
+
+.login-container {
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+  float: left;
+  margin-top: -90px;
+  .control-label{
+  font-size: 12px;
+  }
+ .img-responsivw {
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+  float: right;
+  position: absolute;
+  right: 0px;
+  margin-top: -250px;
+  max-width: 250px;
+  }
+  .rightImages img.img-responsivw:nth-child(2) {
+  display: none;
+  }
+   label {
+  cursor: default;
+  margin-top: 60px;
+  }
+   input {
+  width: 50%;
+  height: 35px;
+  margin-top: 0px;
+  }
+   .btn-primary {
+  height: 35px;
+  font-size: 14px;
+  padding: 6px 12px;
+  }
+   label.checkbox {
+  margin-top: -10px;
+  }
+}
+.login-hook > div .alert.alert-error{
+  margin-top:-10%;
+}
+.login-container .alert-error {
+  float: left;
+  left: 0%;
+  width: 50%;
+  font-size: 12px;
+  height: 35px;
+  padding: 6px 12px;
+  position: absolute;
+}
+
+.login-hook {
+  margin-top: 60px;
+     .alert-error {
+        float: left;
+        left: 0%;
+        width: 50%;
+        font-size:12px;
+        height:35px;
+        padding:6px 12px; 
+        position: absolute;
+      }
+      div > .alert {
+       display:none;
+      }
+
+   .alert-success.alert {
+  position: absolute;
+  width: 60%;
+  top: -110px;
+  height: 25px;
+  padding: 5px 10px;
+  font-size: 12px;
+}   
+     .portlet-body{
+     h1 {
+    display: none;
+    }
+     input {
+    height: 36px;
+    width: 75%;
+    }
+    .rightImages img.img-responsivw:nth-child(2) {
+    display: none;
+    }
+  }
+  .portlet-body #_58_rememberMeCheckbox {
+  width: auto;
+  margin-top: -5px;
+  }
+   .portlet-body .navigation {
+  display: none;
+  }
+}
+/*end login container */
+@media(max-width:380px){
+  .login-hook {
+     .alert-error {
+        float: left;
+        left: 0%;
+        width: 50%;
+        font-size:12px;
+        height:35px;
+        padding:6px 12px; 
+        position: absolute;
+      }
+    }
+}
+/*login forgot password with email and captcha styles*/
+.portlet-login { 
+   div.required {
+  margin-top: 5px;
+  position: relative;
+  float: left;
+  font-size: 12px;
+  left: -365px;
+  }
+   .taglib-captcha div.required {
+  margin-top: 10px;
+  left: -180px;
+  font-size: 12px;
+  top: 30px;
+  }
+    .control-group{
+    margin-top: -20px;
+    max-width: 600px;
+    }
+    input#_58_captchaText.field{
+    width: 30%;
+    margin-top: 2%;
+    }
+    fieldset #_58_emailAddress.field{
+    width:60%; 
+    margin-bottom:50px;
+    }
+    .captcha,  .refresh{
+    float:right; 
+    position:relative;
+    right:220px;
+    top:20px; 
+    margin:15px;
+    }
+    .refresh{
+    left:-20px;
+    }
+    label.control-label{
+    cursor:default;
+    }
+  }
+
+
+/*login forgot password responsive*/
+@media (max-width: 992px) {
+  .portlet-login .captcha,
+  .portlet-login .refresh {
+    left: -60px;
+  }
+  .portlet-login .refresh {
+    left: -40px;
+  }
+  .portlet-login input#_58_captchaText.field {
+    width: 40%;
+  }
+  .portlet-login div.required {
+    margin-top: 5px;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    left: -280px;
+  }
+  .portlet-login .taglib-captcha div.required {
+    margin-top: 10px;
+    left: -10px;
+    font-size: 12px;
+    float: left;
+    top: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .portlet-login div.required {
+    margin-top: -35px;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    left: 0px;
+  }
+  .portlet-login .taglib-captcha div.required {
+    margin-top: 10px;
+    left: 0px;
+    font-size: 12px;
+    float: left;
+    top: 0px;
+  }
+}
+@media (max-width: 445px) {
+  .portlet-login .login-container {
+    label.control-label {
+    font-size: 10px;
+    }
+    .taglib-captcha {
+    left: 0px;
+    margin-top: 55px;
+    }
+    .taglib-captcha .captcha {
+    position: absolute;
+    left: -15px;
+    top: 175px;
+    }   
+     .taglib-captcha img {
+    position: absolute;
+    left: -85px;
+    top: -110px;
+    }
+    .btn-primary {
+    margin-top: 60px;
+    font-size: 11px;
+    }
+    .alert-error {
+    width: 100%;
+    top: 20%;
+    font-size: 9px;
+    }
+  }
+  .login-hook > div .alert.alert-error {
+    margin-top: -35%;
+  }
+  .login-hook {
+    margin-top: 0px;
+    .alert-error {
+   float: left;
+    left: 0%;
+    width: 100%;
+    font-size: 10px;
+    position: absolute;
+    top: 35%;
+    padding: 6px 12px;
+    }
+  }
+}
+/*End Login Page  */
+ 
+/*login responsive */
+@media (max-width:992px){
+  #loginTabs {
+  width: 120%;
+  float: left;
+  margin-left: -40px;
+  position: absolute;
+  border: none;
+  top: -155px;
+  li {
+  font-size: 12px;
+  width: 32%;
+}
+}
+.login-hook .portlet-body input{
+  width:90%; 
+}
+}
+
+@media (max-width: 768px) {
+  .img-responsivw {
+    display: none;
+    visibility: hidden;
+  }
+  #signIn .log-in {
+    margin-top: 15%;
+  }
+  #loginTabs {
+    ul {
+    margin-top:10px;
+    li {
+        margin-left:20px;
+        width: 100%;
+        height:30px;
+        border-radius: 0px;
+      a {
+      font-size: 9px;
+      padding:6px 10px;
+       border-radius: 0px;
+      }
+      a.active {
+      border-radius: 0px;
+      }
+    }
+    li.active a {
+    border-radius: 0px;
+    }
+    }
+  }
+  .login-container {
+    margin-top: 10px;
+  }
+  .login-hook .portlet-body input {
+    width: 100%;
+    font-size: 11px;
+  }
+}
+
+/*End Login Page responsive */
+
+
+/* login success message box */
+.login-hook {
+  .alert-success.alert {
+  position: absolute;
+  width: 60%;
+  display: block;
+  top: -110px;
+  height: 35px;
+  padding: 5px;
+  text-indent:10px;
+  font-size: 14px;
+  }
+}
+@media(max-width:768px){
+.login-hook .alert-success.alert {
+  position: absolute;
+  width: 60%;
+  display: block;
+  top: -30px;
+  padding: 5px;
+  font-size: 12px;
+}
+}
+@media (max-width: 380px) {
+  .login-hook .alert-success.alert {
+    position: absolute;
+    width:100%;
+    display: block;
+    top: 0px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+/*styles unauthorized login page*/
+
+.page-maximized  {
+  .portlet-topper{
+  display: none;
+  }
+  .portlet-content{ 
+  border: none;
+  }
+}
+ .page-maximized.signed-out.public-page.site.dockbar-split.dockbar-ready {
+  .portlet-boundary_58_.portlet-static.portlet-static-end.portlet-login #loginTabs {
+  float: left;
+  margin-left: -20px;
+  position: absolute;
+  border: none;
+  max-width: 600px;
+  }
+  .portlet-boundary_58_.portlet-static.portlet-static-end.portlet-login .form.sign-in-form {
+  margin-top:5%;
+  }
+}
+.portlet-boundary_58_.portlet-static.portlet-static-end.portlet-borderless.portlet-login.login-hook  #loginTabs{
+  float: left;
+  margin-left: -20px;
+  position: absolute;
+  border: none;
+  max-width: 600px;
+  top:-155px; 
+}
+.portlet-boundary_58_.portlet-static.portlet-static-end.portlet-login   #loginTabs{
+ // top:-65px; 
+} 
+.page-maximized.guest-site.signed-out.public-page .login-container {
+  margin-top: -6%;
+}
+.portlet-boundary_58_.portlet-static.portlet-static-end.portlet-login div.portlet-borderless-bar{
+  display:none; 
+}
+.page-maximized.guest-site.signed-out.public-page.site.dockbar-split.dockbar-ready {
+  .login-container {
+  position: relative;
+  top: -5px;
+  }
+  .portlet-login .navigation {
+  display: none;
+  }
+}
+.page-maximized.guest-site.signed-out.public-page .login-container {
+  margin-top: -5%; 
+}
+.portlet-column.portlet-column-only.span12 {
+  .alert.alert-error:nth-child(1) {
+  display: none;
+  }
+  #loginTabs {
+  width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .portlet-column.portlet-column-only.span12 .alert.alert-error {
+    position: absolute;
+    height:30px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .portlet-boundary_58_.portlet-static.portlet-static-end.portlet-borderless.portlet-login.login-hook #loginTabs {
+    float: left;
+    position: absolute;
+    border: none;
+    width: 100%;
+  }
+  .portlet-column.portlet-column-only.span12 #loginTabs {
+    width: 100%;
+      width: 60%;
+  }
+}
+@media (max-width: 450px) {
+  .portlet-boundary_58_.portlet-static.portlet-static-end.portlet-borderless.portlet-login.login-hook #loginTabs {
+    float: left;
+    margin-top: 40px;
+    position: absolute;
+    border: none;
+  }
+}
+.password-notification:first-child {
+margin-top: 15px;
+}
+.password-notification h3 {
+  font-size: 16px;
+  margin-top: 0%;
+}
+@media (max-width: 767px) {
+  .password-notification:first-child {
+  margin-top: 5%;
+}
+}
+@media (max-width: 400px) {
+  .portlet-column.portlet-column-only.span12 .alert.alert-error {
+    position: absolute;
+    top: 20%;
+    height: 30px;
+    width: 100%;
+    }
+    .password-notification h3 {
+    font-size: 15px;
+    text-align: center;
+     margin-top: 15%;
+    }
+    .password-notification:first-child {
+    margin-top: 10px;
+    }
+}
+.portlet-login .navigation { 
+  display: none;
+}

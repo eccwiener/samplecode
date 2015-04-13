@@ -1,0 +1,4 @@
+<a>
+	<img alt="{{match.label}}" class="media-object bus-logo" src="{{match.model.logo}}" />
+	<span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+</a>

@@ -1,0 +1,59 @@
+<div class="modal fade styled-modal" id="addProduct" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            
+                <div class="modal-button"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></span>
+            </div>
+                <h3 class="modal-title" id="myModalLabel">Add Product or Service</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form role="form" name="typeForm" novalidate>
+                        <div class="form-group">
+                            <label class="control-label">Select Product or Service</label>
+                                <div class="styled-select">
+                                    <select class="form-control" 
+                                    		ng-model="newItemType" 
+                                    		ng-options="type.name for type in newItemTypes"
+                                    		ng-disabled="productServiceSelectDisabled"
+                                    		required
+                                    		>
+                                    </select>
+                                    <p class="text-danger" ng-show="typeForm.newItemType.$error.required && !typeForm.newItemType.$pristine">Please select a product or service</p>
+                                </div>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label>Name:</label>
+                                <input type="text" class="form-control" name="name" required
+                                       ng-model="newName"                                       
+                                       ng-minlength="2"
+                                >
+                                <!--ng-pattern="alphaNumeric"-->
+                                
+                                <p class="text-danger" ng-show="typeForm.name.$invalid && !typeForm.name.$pristine">Name is required</p>
+                                <p class="text-danger" ng-show="typeForm.name.$error.pattern">Name can not contain special characters</p>
+                                <p class="text-danger" ng-show="typeForm.name.$error.minlength">Name must be atleast 2 characters long</p>
+                            </div>
+                            <div class="form-group">
+                                <label>Description:</label>
+                                <input type="text" class="form-control" name="description" required
+                                       ng-model="newDescription"
+									   ng-minlength="2"
+                                >
+                                <p class="text-danger" ng-show="typeForm.description.$invalid && !typeForm.name.$pristine">Description is required</p>
+                                <p class="text-danger" ng-show="typeForm.description.$error.pattern">Name must contain letters only</p>
+                                <p class="text-danger" ng-show="typeForm.description.$error.minlength">Name must be atleast 2 characters long</p>
+                            </div>
+                        </div>
+                        <p class="text-right">
+                        	<a href="#" data-dismiss="modal" class="btn-cancel" ng-click="clearServicePopup()">Cancel</a>
+                            <button data-dismiss="modal" class="btn btn-submit" ng-click="addServiceProduct();" ng-disabled="typeForm.$invalid">Save</button>
+                      	</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

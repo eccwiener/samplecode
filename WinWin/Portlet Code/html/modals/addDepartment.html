@@ -1,0 +1,60 @@
+<div class="modal fade styled-modal win-modal" id="addDepartment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                 <div class="modal-button"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></span>
+            </div>
+                <h3 class="modal-title" id="myModalLabel">Add Department</h3>
+            </div>
+            <div class="modal-body">
+            <p>Use this form to add a department to the business account. The email address entered below is for the new user who will be managing this department and must be unique on WinWinUSA. A notification will be sent to the email address provided. </p>
+                <div class="row">
+                   	<form role="form" name="departmentForm">
+	                	<div class="form-group required">
+						    <label class="control-label">Department Name:</label>
+						    <input type="text" ng-model="newDepartment.departmentName" class="form-control" name="dept_name" autocomplete="off" required>
+							<!-- <p class="text-danger" ng-show="departmentForm.dept_name.$error.required && !departmentForm.dept_name.$pristine">Department name required</p>-->
+						</div>
+						<div class="form-group required">
+						    <label class="control-label">Email:</label>
+						    <input type="text" ng-model="newDepartment.email" class="form-control" name="dept_email" autocomplete="off" required>
+							<!-- <p class="text-danger" ng-show="departmentForm.dept_name.$error.required && !departmentForm.dept_name.$pristine">Department name required</p>-->
+						</div>
+						<div class="form-group required">
+                            <label class="control-label">Street:</label>
+                            <input type="text" ng-model="newDepartment.street" class="form-control" name="street"   autocomplete="off" required>
+                            <p class="text-danger" ng-show="departmentForm.street.$error.required && !departmentForm.street.$pristine">Street required</p>
+                        </div>
+                        <div class="form-group required">
+                            <label class="control-label">Zip Code:</label>
+                            <input type="text" class="form-control" ng-model="newDepartment.postalCode" name="zip_code"  autocomplete="off" required>
+                            <p class="text-danger" ng-show="departmentForm.zip_code.$error.required && !departmentForm.zip_code.$pristine">Zip Code required</p>
+                            <p class="text-danger" ng-show="departmentForm.zip_code.$error.pattern && !departmentForm.zip_code.$pristine">Zip Code must contain numbers only</p>
+                        </div>
+                        <div class="form-group required">
+                            <label class="control-label">City:</label>
+                            <input type="text" ng-model="newDepartment.city" class="form-control" name="city"   autocomplete="off" required>
+                            <p class="text-danger" ng-show="departmentForm.city.$error.required && !departmentForm.city.$pristine">City required</p>
+                        </div>
+                        <div class="form-group required">
+                            <label class="control-label">State:</label>
+                            <input maxlength="2" type="text" ng-model="newDepartment.state" class="form-control" name="state" autocomplete="off" required>
+                            <p class="text-danger" ng-show="departmentForm.state.$error.required && !departmentForm.state.$pristine">State required</p>
+                        </div>
+						<p class="text-right">
+	                        	<a href="#" data-dismiss="modal" ng-click='clearDepartmentPopup()' class="btn-cancel">Cancel</a>
+	                        	<button type="submit" data-dismiss="modal" class="btn btn-submit" ng-click="saveDepartment()">Send</button>
+                       	</p>                                 
+                    </form>
+                </div>
+            </div><!-- end .modal-body -->
+        </div><!-- end .modal-content -->
+    </div><!-- end .modal-dialog -->
+</div><!-- end .modal -->
+
+
+
+
+
+
+

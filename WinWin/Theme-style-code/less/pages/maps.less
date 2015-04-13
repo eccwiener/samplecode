@@ -1,0 +1,584 @@
+
+.full-map{
+  margin-top:20px;
+}
+#spinner {
+  max-width: 30px;
+  max-height: 30px;
+}
+.mapLoad {
+  position: absolute;
+  z-index: 1000000;
+  left: 50%;
+  top: 50%;
+  background-color:#FFF;
+  border-radius:20px;  
+ padding:5px;
+}
+.maps-container {
+  color: black;
+  max-height:500px;
+  overflow:hidden;
+  h4{
+    margin-top: -15px;
+  }
+  h5 {
+  text-align: center;
+  margin-left: -5px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #474747;
+  }
+  #suggested {
+  text-align: center;
+  font-weight: bold;
+  color: darkgray;
+  }
+  #business-title {
+  margin-top: 30px;
+  color:black;
+  }
+  .media .media-object {
+  margin-right: 5px;
+  margin-top: 34px;
+  }
+  #company-logo {
+  margin-top: -15px;
+  }
+  .right-text ul .request-alliance {
+  border-right: 1px solid #358ac0;
+  padding-right:15px;
+  height:22px;
+  }
+  .suggested-businesses {
+    margin-top: 35px;
+    width: 70%;
+    float: left;
+    h4 {
+    font-size: 14px;
+    }
+     p {
+    font-size: 12px;
+    }
+    .right-text ul {
+    margin-top: 10px;
+    }
+  }
+}
+
+
+
+.top-map-nav .form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.maps-top-company {
+  margin-top: 20px;
+  #icon {
+  margin-left: 30px;
+  }
+  #top-business-description {
+  margin-top: 25px;
+  color:black;
+  width: 75%;
+  }
+}
+#mapimg {
+  border: 10px solid #9bc1ff;
+}
+
+.right-text{ 
+  a {
+  color: #358ac0;
+  float: right;
+  margin-top: 0px;
+  font-size: 14px;
+  margin-left: 15px;
+  font-weight: 900;
+  }
+  ul {
+  list-style: none;
+  margin-top:15px;
+  margin-right:0px;
+  }
+  ul li {
+  padding-right: 10px;
+  padding-left: 10px;
+  }
+  ul li .right-allies {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  }
+}
+
+.suggested-businesses {
+  #business-description {
+  margin-top: 25px;
+  color:black;
+  width: 75%;
+  }
+  .right-text {
+  margin-right: 200px;
+  margin-top: 10px; 
+  }
+  ul {
+  padding-bottom: 25px; 
+  }
+  .right-text, h5 {
+  font-size: 13px;
+  }
+  #business2 {
+  border-top: 1px solid #ebebeb;
+  padding-top: 55px;
+  }
+}
+
+
+.right-allies{ 
+  p {
+  float: right;
+  margin-top: 20px;
+  color: gray;
+  margin-right:-15px;
+  }
+  img {
+  float: right;
+  margin-top: 20px;
+  margin-right: -5;
+  }
+}
+
+
+
+.heading {
+  text-align: center;
+  width: 70%;
+  border-bottom: 1px solid #ebebeb;
+   h4 {
+  display: inline-block;
+// font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 200;
+  position: relative;
+  color: #8b8b8b;
+  top: 18px;
+  font-size: 14px;
+  background-color: #fff;
+  padding: 0 8px;
+  }
+}
+
+.industry-sponsor {
+  width: 25%;
+  float: right;
+  border: 1px solid #ebebeb;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+     h4 {
+      position: relative;
+      z-index: 1;
+      color: #393939;
+      float: right;
+      font-size: 14px;
+      background-color: #FFF;
+      margin-left: 50px;
+      padding-left: 15px;
+      font-weight: bold;
+      font-style: italic;
+      padding-right: 15px;
+      text-align: center;
+      margin-top: -20px;
+    }
+     #industry-text {
+      color: darkgray;
+      margin-top: 10px;
+      line-height: 16px;
+      font-size: 14px;
+    }
+    img {
+      margin-top: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .visit-profile {
+      background-color: #f89538;
+      border: none;
+      padding: 12px 16px;
+      color: white;
+      font-size: 14px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+}
+
+
+
+/* Map Responsive Code START  */
+@media (max-width: 980px){
+  .maps-container {
+      .right-allies p{
+      margin-right:-22px;
+      margin-top:25px;
+      font-size:11px;
+      }
+      .right-allies img{
+        margin-top:20px;
+      }
+      .media .media-object {
+      margin-right: 5px;
+      margin-top: -15px;
+      }
+      .media #company-logo-top {
+      margin-right: 5px;
+      margin-top: 50px;
+      }
+}
+.right-allies {
+  margin-bottom: 40px;
+}
+  .suggested-businesses #business-description {
+  margin-top: 15px;
+  width: 75%;
+}
+}
+
+@media (max-width: 800px) {
+  .maps-container {
+      .right-allies p {
+      float: right;
+      color: gray;
+      margin-top:6px;
+      margin-left:10px;
+      margin-right:-20px;
+      }
+       .industry-sponsor{
+        width:27%;
+      }
+       .media #company-logo-top{
+        margin-top:45px;
+      }
+      .media #company-logo{
+        margin-top:-20px;
+      }
+      #business-description{
+      margin-top:5px;
+      }
+      .right-text{
+      margin-top:30px;
+      }
+  }
+  .right-allies {
+  margin-bottom:40px;
+}
+}
+
+/* Map Responsive Code START  */
+@media (max-width: 767px) {
+  .maps-container {
+    .right-allies p {
+    font-size: 10px;
+    margin-right: -20px;
+    }
+    .media #company-logo-top{
+     margin-left:35px;
+     margin-top:0px;
+   }
+    .industry-sponsor {
+    clear:both;
+      width:100%;
+      font-size:14px;
+    }
+    .industry-sponsor img{
+      margin-left:15px;
+    }
+    .industry-sponsor p{
+      width:99%;
+    }
+    .suggested-businesses{
+      width:100%;
+    }
+}
+   .heading {
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid #d5d5d5;
+  }
+}
+@media (max-width: 360px) {
+  .maps-container{
+        h5 {
+        margin-left: 25px;
+        text-align:left;
+        font-size:0px;
+        }
+        #company-logo-top{
+         width:90%;
+         }
+        #company-logo {
+        width:90%;
+          margin-top:-50px;
+          margin-left:40px;
+          }
+        .media-body {
+          left: 10px;
+          width: 100%;
+          padding-top: 0px;
+          margin-top: 0px;
+          position: relative;
+          }
+        .media{
+            .media-body h4{
+            font-size:14px;
+            }
+            .media-body #top-business-description{
+            width:96%;
+            color:black;
+           font-size:10px;
+            }
+            .media-body #business-description 
+            {
+            font-size:10px;
+            width:100%;
+            }
+          }
+      .right-allies {
+          float: right;
+          width:100%;
+          margin-right: 10px;
+          font-size: 7px;
+          margin-bottom: 0px;
+          img {
+          width: 11%;
+          position:relative;
+          right:0px;
+          }
+          p{
+          margin-top:0px;
+          margin-right:-240px;
+          }
+        }
+      .right-text{
+          a img {
+          width: 10%;
+          margin-right: 2px;
+          margin-left: -25px;
+          }
+          ul {
+          margin-left: -45px;
+          }
+          a {
+          color: #358ac0;
+          float: right;
+          margin-top:0px;
+          text-align: left;
+          margin-left: 15px;
+          font-weight: 900;
+          padding-right: 0px;
+          }
+           ul li {
+           font-size: 11px;
+          }
+          ul li img {
+            padding-right:2px;
+          }
+       }
+       .heading h4 {
+          margin-left: 20px;
+          font-size: 12px;
+        }
+      .industry-sponsor{
+          font-size: 12px;
+          margin-left: -20px;
+          img {
+          width: 80%;
+          }
+          h4 {
+          font-size: 12px;
+          background-color: #FFF;
+          margin-right: 20px;
+          margin-left: 20px;
+          }
+        }
+    .visit-profile {
+      padding: 4px 9px;
+    }
+}
+}
+
+
+.full-map{
+  .tab-content{
+    padding-top: 0;
+    margin-top: -19px;
+    .maps-container{
+      .map{
+        padding:0;
+      }
+      #mapimg{
+          img{
+            width: 100%
+          }
+      }
+      .content-filter{
+        margin-bottom: 0;
+        width: 99.1%;
+        .styled-select.industry{
+          background: url(/WinWinTheme-theme/images/assets/map/select-arrow.png) no-repeat 100% 2px #ffffff;
+          height: 30px;
+          margin-left: 0px;
+          width:220px;
+        }
+
+        .styled-select.region{
+      background: url(/WinWinTheme-theme/images/assets/map/select-arrow.png) no-repeat 100% 2px #ffffff;
+      height: 30px;
+      margin-left: 5px;
+      width:220px;
+            }
+        select, input{
+          border:none;
+          height:30px;
+        }
+        select#Industry{
+          padding: 0 32px;
+          font-size: 12px;
+          height:30px;
+        }
+        select#Region{
+           padding: 0 37px;
+          font-size: 12px;
+          height: 30px;
+          width: 100%;
+        }
+        .form-group#zipcode input{
+          height: 30px;
+          padding: 0 18px;
+          font-size: 12px;
+          margin-left:5px;
+          width:190px;
+        }
+        input#keyword{
+          padding: 0 55px;
+          font-size: 12px;
+          height: 30px; 
+        }
+        .form-group.keyword{
+        position: relative;
+        margin-left: 5px;
+          height: 30px;
+        }
+        .glyphicon-search{
+        position: absolute !important;
+        color: #818181;
+        top: 10px !important;
+        left: 20px;
+        }
+
+        .styled-select{
+          height: 38px;
+            background: url(/WinWinTheme-theme/images/assets/map/select-arrow.png) no-repeat 99% 8px #ffffff;
+          select{
+            border:none;
+          }
+        }
+    }
+    }
+
+  }
+}
+//firefox specific styles
+        @-moz-document url-prefix() {
+          .full-map  .content-filter select {
+            width:110%;
+          }
+            .full-map .tab-content .maps-container .content-filter input#keyword {
+                  padding: 0 45px;
+            }
+        }
+
+.map-popup, #map-canvas{
+  color: black;
+  padding: 10px; 
+  max-width: 99%;}
+.map-popup{
+     h4{
+    max-width: 150px;
+    font-size:14px;
+    }
+    #street-view, .map-popup #street-view {
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    }
+  .map-popup-header{
+  text-align:right;
+  }
+  .map-popup-content > ul > li.list-group-item.business-video > div > iframe{
+    width: 140%;
+} 
+  .map-popup-content {
+  font-size: 11px;
+  margin-top:20px; 
+        ul li{
+      width: 100%;
+      border: none;
+      padding-left: 0px;
+      max-width: 150px;
+      line-height: 10px;
+        }
+      }
+  .map-popup-right a{
+  float: right;
+  font-size: 9px;
+  text-align: center;
+      img {
+      max-width:75%;
+      }
+    }
+ 
+.map-popup-bottom {
+   ul{
+  background-color: #c7c7c7;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-left: 4px; 
+  text-align: center;
+  height: 30px;
+  left: 0px;
+  width: 100%;
+  min-width:150px;
+  position: relative;
+    li{
+  display: block;
+  float: left;
+  padding-left: 5px; 
+  padding-right: 5px;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #b8b8b8;
+  text-align: center;
+      }
+      li:first-child {
+      border-left: none;
+      }
+      li:nth-child(2) {
+      border-right: none;
+        } 
+    }
+  a{
+  color: #FFF;
+  font-size:9px;
+  font-weight: 300;
+  }
+  a:hover{
+  text-decoration:none;
+}
+}
+}
+
+
+/* hide tab*/
+
+.map-portlet  .header-content .nav-tabs > li.active a {
+visibility:hidden;
+}

@@ -1,0 +1,48 @@
+<div class="modal fade styled-modal win-modal" id="editEmp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <div class="modal-button"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></span>
+            </div>
+                <h3 class="modal-title" id="myModalLabel">Edit Employee</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form id="add-employee" method="post" name="employeeForm">
+                        <div class="form-group required">
+                            <label for="email" class="control-label">Email Address:</label>
+                            <input type="text" ng-model="currentEmployee.emailAddress" name="email" class="form-control" id="email" autocomplete="off" required>
+                            <label class="error error-existing-email">An account with this email address already exists. Please enter a different email address.</label>
+                            <!--<p class="text-danger" ng-show="employeeForm.email.$error.required && !employeeForm.email.$pristine ">Email Required</p>
+                            <p class="text-danger" ng-show="employeeForm.email.$error.email">Email not valid</p>-->
+                        </div>
+                        <div class="form-group required">
+                            <label for="emp_first_name" class="control-label">First Name:</label>
+                            <input type="text" name="first_name" class="form-control" id="emp_first_name" autocomplete="off" ng-model="currentEmployee.firstName" required>
+                        	<!--<p class="text-danger" ng-show="employeeForm.first_name.$error.required && !employeeForm.first_name.$pristine">First Name required</p>-->
+                        </div>
+                        <div class="form-group required">
+                            <label for="emp_last_name" class="control-label">Last Name:</label>
+                            <input type="text" name="last_name" class="form-control" id="emp_last_name"  autocomplete="off" ng-model="currentEmployee.lastName" required>
+                            <!--  <p class="text-danger" ng-show="employeeForm.last_name.$error.required && !employeeForm.last_name.$pristine">Last Name required</p>-->
+                        </div> 
+                        <div class="form-group required">
+                            <label for="status" class="control-label">Status:</label>
+								<div class="styled-select">
+                                    <select class="form-control" required>
+	                                    <option value="0">Active</option>
+	                                    <option value="5">Disabled</option>
+                                    </select>
+                                </div> 
+                        </div>                     
+
+                        <p class="text-right">
+                            <a href="#" data-dismiss="modal" class="btn-cancel" ng-click='clearEmployeePopup()'>Cancel</a>
+                            <button type="submit" data-dismiss="modal" class="btn btn-submit"  ng-click="updateCurrentEmployee()">Save</button>
+                        </p>
+                    </form>
+                </div>
+            </div><!-- end .modal-body -->
+        </div><!-- end .modal-content -->
+    </div><!-- end .modal-dialog -->
+</div><!-- end .modal -->
