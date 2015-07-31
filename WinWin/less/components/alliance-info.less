@@ -1,0 +1,143 @@
+
+
+/***
+
+  Alliance info component appears on the business dashboard
+  underneath the dashboard business profile.
+
+***/
+.info-content {
+  border: 1px solid #dadada;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  background-color: #FFF;
+  width: 100%;
+  padding: 10px 0px;
+  height: 80px;
+  position: relative;
+  margin-top: 65%;
+  font-family: 'Century Gothic W01';
+  margin-bottom: 20px;
+  margin-left: 30px;
+    table {
+    width: 100%;
+      a {
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      font-weight: 400;
+      }
+      tr + tr td {
+      border-top: 1px solid #dadada;
+      }
+      tr td {
+      padding: 5px 15px;
+      padding-left: 20px;
+      }
+      tr td:first-child {
+      color: #81b7e3;
+      font-size: 12px;
+      }
+    }
+}
+
+
+@media (max-width: 992px) {
+  .info-content {
+    margin-top: 90%;
+    margin-left: 0px;
+    table {
+      tr td:first-child {
+      font-size: 12px;
+      }
+      a {
+      color: #000;
+      font-size: 12px;
+      margin: 0px;
+      padding: 0px;
+      }
+    }
+  }
+}
+ 
+
+/*pending alliances */
+#pending-alliances {
+  .result-bus-details.result-part-proximity {
+  position: absolute;
+  left: 40%;
+  }
+  .col-md-3.result-bus-logo {
+  margin-left: -90px;
+  }
+  .col-md-3.result-bus-logo img {
+  margin-top: -10px;
+  max-height: 50px;
+  max-width: 65px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  border: 1px solid #aeaeae;
+  background-color: #FFF;
+  }
+  .result-bus-details small {
+  font-size: 95%;
+  }
+  .result-bus-details {
+  width: 60%;
+  left: -6%;
+}
+  .result-bus-details h3 a {
+  font-size: 12px;
+  }
+}
+
+/*rec alliances on dash*/
+.rec-info {
+  padding-left: 5px;
+.result-bus-info li {
+  max-width: 200px;
+  width: 100%;
+  word-wrap: break-word;
+  }
+  p {
+  color: #909090;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  max-height: 42px;
+  overflow-y: initial !important; 
+  max-width: 500px;
+  font-family: 'TradeGothicNextW01-Ligh 693250';
+  font-size: 12px;
+  }
+  a {
+  font-family: 'Century Gothic W01';
+  font-weight: 100 !important;
+  font-size: 14px;
+  }
+  a:hover {
+  text-decoration: none;
+    }
+  }
+.rec-info-detail {
+    .col-md-6 {
+    margin-top: -20px;
+    }
+    .col-md-6:first-child {
+    width: 100%;
+    float: left;
+    }
+    .col-md-6:nth-child(2) {
+    float: right;
+    width: 40%;
+    right: 0px;
+    position: absolute;
+    }
+    .col-md-6 small {
+    font-family: 'TradeGothicNextW01-Ligh 693250';
+    font-size: 12px;
+    color: #2C3034;
+    }
+}

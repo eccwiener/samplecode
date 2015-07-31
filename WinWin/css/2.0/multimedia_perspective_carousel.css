@@ -1,0 +1,301 @@
+/*
+skins available:
+	- black
+	- white
+*/
+
+/* the container */
+.multimedia_perspective_carousel {
+    position:relative;
+    overflow:hidden;
+}
+.multimedia_perspective_carousel img {
+    max-width:none;
+    max-height:none;
+}
+.multimedia_perspective_carousel_list {
+    margin:0;
+    padding:0;
+    list-style:none;
+    display:none;
+}
+
+.multimedia_perspective_carousel .contentHolder {
+    position:relative;
+    overflow:hidden;
+}
+.mycanvas {
+    position:absolute;
+    top:8px;
+    right:10px;
+    z-index:1000;
+}
+
+.myloader {
+    background:url(../images/media-slider/skins/loader.gif);
+    width:37px;
+    height:37px;
+    position:absolute;
+    left:49%;
+    top:49%;
+    z-index:999;
+}
+
+.hideElement {
+    display:none;
+}
+
+/***black SKIN***/
+.multimedia_perspective_carousel.black .contentHolderUnit {
+    position:absolute;
+    overflow:hidden;
+    cursor: pointer;
+    background:url(../images/media-slider/skins/black/empty.gif) repeat;
+}
+
+.multimedia_perspective_carousel.black .elementTitle {
+    position:absolute;
+    left:0;
+    top:40px;
+    width:100%;
+    text-align:center;
+    font: bold 22px/30px 'Droid Sans', Verdana, Helvetica, sans-serif;
+    color:#666;
+    text-transform:capitalize;
+}
+
+.multimedia_perspective_carousel.black .iconOver {
+    position:absolute;
+    width:85px;
+    height:85px;
+    /*background:url(../skins/black/video.png) 0 0 no-repeat;*/
+    background-position:left top;
+    background-repeat:no-repeat;
+    display:none;
+    z-index:200;
+    cursor: pointer;
+}
+
+/*.multimedia_perspective_carousel.black .iconOver:hover {
+	background:url(../skins/black/play_overON.png) 0 0 no-repeat;
+	display:none;
+	z-index:200;
+	cursor: pointer;
+}*/
+
+.multimedia_perspective_carousel.black .bannerControls {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:101;
+    width:100%;
+}
+
+.multimedia_perspective_carousel.black .leftNav {
+    position:absolute;
+    left:2px;
+    width:62px;
+    height:68px;
+    background:url(../images/media-slider/skins/black/leftNavOFF.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.multimedia_perspective_carousel.black .leftNav:hover {
+    background:url(../images/media-slider/skins/black/leftNavON.png) 0 0 no-repeat;
+}
+
+.multimedia_perspective_carousel.black .rightNav {
+    position:absolute;
+    right:-2px;
+    width:62px;
+    height:68px;
+    background:url(../images/media-slider/skins/black/rightNavOFF.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.multimedia_perspective_carousel.black .rightNav:hover {
+    background:url(../images/media-slider/skins/black/rightNavON.png) 0 0 no-repeat;
+}
+
+.multimedia_perspective_carousel.black .bottomNav {
+    position:absolute;
+    height:35px;
+    width:0;
+    padding-left:9px;
+    z-index:140;
+}
+
+.multimedia_perspective_carousel.black .bottomNavButtonOFF {
+    float:left;
+    display:block;
+    width:16px;
+    height:15px;
+    background:url(../images/media-slider/skins/black/bottomNavOFF.png) 0 0 no-repeat;
+    padding-left:9px;
+    cursor: pointer;
+}
+
+.multimedia_perspective_carousel.black .bottomNavButtonON {
+    float:left;
+    display:block;
+    width:16px;
+    height:15px;
+    padding-left:9px;
+    background:url(../images/media-slider/skins/black/bottomNavON.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.multimedia_perspective_carousel.black .bottomNavLeft {
+    display:none;
+    position:absolute;
+    z-index:140;
+}
+.multimedia_perspective_carousel.black .bottomNavRight {
+    display:none;
+    position:absolute;
+    z-index:140;
+}
+
+.multimedia_perspective_carousel.black .bottomOverThumb {
+    position:absolute;
+    width:88px;
+    height:106px;
+    background:url(../images/media-slider/skins/black/bottomOverThumbBg.png) 23px bottom no-repeat;
+    bottom:27px;
+    xleft:0px;
+    margin-left:-25px;
+}
+.multimedia_perspective_carousel.black .bottomOverThumb img {
+    border:4px solid #000000;
+}
+
+
+
+
+
+
+/***white SKIN***/
+.multimedia_perspective_carousel.white .contentHolderUnit {
+    position:absolute;
+    overflow:hidden;
+    cursor: pointer;
+    background:url(../images/media-slider/skins/white/empty.gif) repeat;
+}
+
+.multimedia_perspective_carousel.white .elementTitle {
+    position:absolute;
+    left:0;
+    top:40px;
+    width:100%;
+    text-align:center;
+    font: bold 22px/30px 'Droid Sans', Verdana, Helvetica, sans-serif;
+    color:#666;
+    text-transform:capitalize;
+}
+
+.multimedia_perspective_carousel.white .iconOver {
+    position:absolute;
+    width:85px;
+    height:85px;
+    /*background:url(../skins/white/video.png) 0 0 no-repeat;*/
+    background-position:left top;
+    background-repeat:no-repeat;
+    display:none;
+    z-index:200;
+    cursor: pointer;
+}
+
+/*.multimedia_perspective_carousel.white .iconOver:hover {
+	background:url(../skins/white/play_overON.png) 0 0 no-repeat;
+	display:none;
+	z-index:200;
+	cursor: pointer;
+}*/
+
+.multimedia_perspective_carousel.white .bannerControls {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:101;
+    width:100%;
+}
+
+.multimedia_perspective_carousel.white .leftNav {
+    position:absolute;
+    left:-2px;
+    width:71px;
+    height:71px;
+    background:url(../images/media-slider/skins/white/leftNavOFF.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.multimedia_perspective_carousel.white .leftNav:hover {
+    background:url(../images/media-slider/skins/white/leftNavON.png) 0 0 no-repeat;
+}
+
+.multimedia_perspective_carousel.white .rightNav {
+    position:absolute;
+    right:-2px;
+    width:71px;
+    height:71px;
+    background:url(../images/media-slider/skins/white/rightNavOFF.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.multimedia_perspective_carousel.white .rightNav:hover {
+    background:url(../images/media-slider/skins/white/rightNavON.png) 0 0 no-repeat;
+}
+
+.multimedia_perspective_carousel.white .bottomNav {
+    position:absolute;
+    height:35px;
+    width:0;
+    padding-left:9px;
+    z-index:140;
+}
+
+.multimedia_perspective_carousel.white .bottomNavButtonOFF {
+    float:left;
+    display:block;
+    width:16px;
+    height:15px;
+    background:url(../images/media-slider/skins/white/bottomNavOFF.png) 0 0 no-repeat;
+    padding-left:9px;
+    cursor: pointer;
+}
+
+.multimedia_perspective_carousel.white .bottomNavButtonON {
+    float:left;
+    display:block;
+    width:16px;
+    height:15px;
+    padding-left:9px;
+    background:url(../images/media-slider/skins/white/bottomNavON.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.multimedia_perspective_carousel.white .bottomNavLeft {
+    display:none;
+    position:absolute;
+    z-index:140;
+}
+.multimedia_perspective_carousel.white .bottomNavRight {
+    display:none;
+    position:absolute;
+    z-index:140;
+}
+
+.multimedia_perspective_carousel.white .bottomOverThumb {
+    position:absolute;
+    width:88px;
+    height:106px;
+    background:url(../images/media-slider/skins/white/bottomOverThumbBg.png) 23px bottom no-repeat;
+    bottom:27px;
+    xleft:0px;
+    margin-left:-25px;
+}
+.multimedia_perspective_carousel.white .bottomOverThumb img {
+    border:4px solid #ffffff;
+}
+
+

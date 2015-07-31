@@ -1,0 +1,87 @@
+/* justifying text*/
+.pp_defaultpp_content_container,
+.pp_pic_holder.pp_default,
+.pp_fade,
+#pp_full_res iframe,
+.pp_content {
+  min-width: 300px;
+  max-width: 100%;
+}
+@media (max-width: 770px) {
+  #pp_full_res iframe,
+  .pp_pic_holder.pp_default,
+  .pp_content {
+    min-width: 400px;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    background-color:transparent;
+  }
+  div.pp_default .pp_top,
+  div.pp_default .pp_top .pp_middle,
+  div.pp_default .pp_top .pp_left,
+  div.pp_default .pp_top .pp_right,
+  div.pp_default .pp_bottom,
+  div.pp_default .pp_bottom .pp_left,
+  div.pp_default .pp_bottom .pp_middle,
+  div.pp_default .pp_bottom .pp_right {
+    visibility: hidden;
+  }
+  div.pp_default .pp_content, div.light_rounded .pp_content{
+    background-color:#000;
+  } 
+  div.pp_default .pp_close {
+    position: absolute;
+    right: -15%;
+     background: none;
+    top: 0px;
+  } 
+  div.pp_default .pp_left {
+    background: none;
+  }
+}
+@media (max-width: 460px) {
+      div.pp_default .pp_close {
+      position: absolute;
+      right: 0%;
+      background: none;
+      top: -40px;
+      } 
+}
+@media (max-width: 360px) {
+  .pp_pic_holder.pp_default,
+  .pp_content {
+    margin-left: 0px;
+    min-width: 100%;
+  }
+    #pp_full_res iframe,
+  .pp_pic_holder.pp_default,
+  .pp_content {
+    min-width: 250px;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    left: -10px;
+    background-color:transparent;
+  }
+    div.pp_default .pp_close {
+    position: absolute;
+    right: -60%;
+     background: none;
+    top: -40px;
+  } 
+}
+@media (max-width: 320px) {
+    #pp_full_res iframe,
+    .pp_pic_holder.pp_default,
+    .pp_content {
+    min-width: 200px;
+    }
+    div.pp_default .pp_close {
+    position: absolute;
+    right: -90%;
+     background: none;
+    top: -40px;
+    } 
+}

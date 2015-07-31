@@ -1,0 +1,32 @@
+/***
+
+  BORDERED TITLE appears under the Network Center of the Business Dashboard.
+  This component surrounds a title with a left,bottom, and right border.
+
+***/
+
+//box border title
+
+.bordered-title {
+  text-align: center;
+  //border-left: 1px solid #ccc;
+  //border-right: 1px solid #ccc;
+  margin-bottom: 60px;
+  &:after{
+    content: "";
+    display: block;
+   // border-top: 1px solid #ccc;
+    margin-top: -13px;
+  }
+  span{
+  //  background: #fff;
+    padding: 0 10px;
+  }
+}
+
+
+// border-title without left/right border just add this as .boder-title .borderless ------ title ------
+.borderless{
+  border-right: none;
+  border-left: none;
+}

@@ -1,0 +1,119 @@
+/***
+
+  RECOMMENDED ALLIANCE appear on the sidebar of the Business's alliances section.
+  This component is used by the business to fill their recommended tab.
+
+***/
+.rec-industry {
+  width: 100%;
+  margin-left: 30px;
+  margin-top: -30px;
+  .pick-industry {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+    box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+    background: #FFF;
+    height: 100%;
+    margin-bottom: 70px;
+    padding: 10px;
+      small.text-center {
+      font-size: 11px;
+      font-family: 'TradeGothicNextW01-Ligh 693250';
+      }
+      .radio-wrapper {
+      text-align: left;
+      margin-left: 60px;
+      margin-top: -5px;
+      }
+      .radio-wrapper label {
+      font-size: 13px;
+      font-family: 'Century Gothic W01';
+      color: #000;
+      }
+      .btn-group .btn + .btn {
+      margin-left: 5px;
+      }
+    }
+  button #gears {
+  position: absolute;
+  z-index: 1;
+  }
+  button:hover,
+  button:focus {
+  outline: none !important;
+  }
+  button.join-alliance {
+  width: 100%;
+  border: none;
+  background-color: #18517F;
+  }
+  button.join-alliance:hover {
+  background-color: #0c395d;
+  }
+  p {
+    position: absolute;
+  top: 53px;
+  left: -160px;
+  font-size: 10px;
+  }
+}
+#btnRecommended.btn.join-alliance {
+background: url("/WinWinTheme-theme/images/gear-black.png") no-repeat 50% 13px;
+max-width: 5%;
+color: transparent;
+position: absolute;
+padding: 25px;
+left: -90px;
+top: 38px;
+border-radius: 12px;
+max-height: 50px;
+}
+#btnRecommended.btn.join-alliance:hover {
+background: url("/WinWinTheme-theme/images/gear-blue.png") no-repeat 50% 13px;
+}
+/*end new code*/
+/*responsive rec button */
+@media (max-width: 992px) {
+  #btnRecommended.btn.join-alliance {
+  font-size: 12px;
+  padding-left: 18%;
+  }
+  .rec-industry {
+    .checkbox {
+    margin-left:-30px;
+    }
+    .btn{
+    margin:0px; 
+    font-size:10px;
+    height:30px;
+    padding:6px 12px;  
+    }
+    .btn-warning{
+    width:100px;
+    } 
+  }
+}
+/*hide recommended in responsive*/
+@media (max-width: 767px) {
+  #btnRecommended.btn.join-alliance,   
+  .rec-industry button.join-alliance, 
+  .rec-industry p {
+   display:none;
+  }
+}
+@media (max-width: 400px) {
+  .rec-industry .pick-industry {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #ececec;
+  height: 100%;
+  margin-top: 20px;
+  padding-top: 30px;
+  }
+}

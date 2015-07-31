@@ -1,0 +1,303 @@
+/***
+
+  SEARCH FILTER appear at the top of the following pages.
+
+    1. Alliances 
+    2. B2b Exchange
+    3. Coop Marketing
+    3  Events
+
+	NOTE: STYLED FILTER currently appears during the registration process
+	
+***/
+.content-filter {
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  border: 1px solid #aeaeae;
+  width: 99%;
+  padding: 10px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #FFF;
+  margin: 1px 1px 20px 1px;
+  top: -30px;
+  z-index: 100;
+  padding-right: 0px;
+}
+.content-filter form input {
+  color: #636363;
+  font-size: 12px;
+  padding-left: 15px;
+}
+.content-filter form input:focus {
+  outline: none;
+}
+@media (max-width: 767px) {
+  .content-filter form input {
+    width: 100%;
+  }
+}
+.content-filter form button[type="submit"] {
+  padding: 4px 20px;
+  font-size: 12px;
+  /*float: right;*/
+}
+.content-filter.styled-filter {
+  color: #fff;
+  font-size: 18px;
+  background-color: #282e3a;
+  padding: 0;
+  margin: 0 auto;
+}
+.content-filter.styled-filter form input,
+.content-filter.styled-filter form button {
+  height: 45px;
+  font-size: 12px;
+}
+.content-filter.styled-filter form input {
+  min-width: 480px;
+}
+.content-filter.styled-filter form button {
+  font-size: 12px;
+  min-width: 125px;
+}
+.content-filter.styled-filter form .form-group:nth-child(2) {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Century Gothic W01';
+}
+.content-filter.styled-filter form .form-group:nth-child(3) {
+  margin: 0 5px;
+  padding: 18px 0;
+}
+@media (max-width: 1198px) {
+  .content-filter.styled-filter form input {
+    width: 100%;
+    min-width: 100%;
+    width: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .content-filter.styled-filter form .form-group:nth-child(2){
+    max-width:60px;
+    text-align:left!important; 
+    font-size:11px !important; 
+    line-height:11px;
+  }
+  #p_p_id_employeesetupwizard_WAR_Membershipportlet_{
+    margin-top:0px !important; 
+  }
+  .content-filter.styled-filter form button {
+    width: 10%;
+    top:20px;
+    position:absolute; 
+  }
+    .content-filter.styled-filter form input {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .content-filter .content-filter.styled-filter form input,
+  .content-filter .content-filter.styled-filter form button {
+    height: 45px;
+    font-size: 12px;
+  }
+  .content-filter .content-filter.styled-filter form .form-group:nth-child(2) {
+    margin-left: 5px;
+    font-size: 12px;
+    width: 20%;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Century Gothic W01';
+  }
+}
+@media (max-width: 767px) {
+  .content-filter.styled-filter form .form-group:nth-child(2){
+    max-width:100%;
+    text-align:left!important; 
+    font-size:16px !important; 
+    text-indent:10px;
+  }
+  .content-filter.styled-filter form button {
+    width: 100%;
+    top:150px;
+    height:30px;
+    padding-top:5px;
+    position:absolute; 
+  }
+    .content-filter.styled-filter form input {
+    max-width: 100%;    
+    min-width: 100%;
+    margin-top:-50px;
+    height:30px;
+  }
+  .content-filter .content-filter.styled-filter form input,
+  .content-filter .content-filter.styled-filter form button {
+    height: 45px;
+    font-size: 12px;
+  }
+
+}
+    //skip registration
+    &.skip-reg{
+      font-size: 18px;
+      padding: 15px;
+      font-size: 18px;
+
+      button{
+        padding: 6px 33px;
+        height: 45px;
+        font-size: 18px;
+      }
+
+    }
+  
+ // form filter wrapper
+
+// STYLE STEP BOXES
+    .reg-steps{
+      height: 81px;
+      padding: 10px 14px;
+      background-color:@step-bg-color;
+      color:@step-txt-color;
+      span{
+      font-size:21px;
+      }
+    }
+  
+// Form Elements
+::-webkit-input-placeholder {
+  color: @placeholder-text;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: @placeholder-text;;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: @placeholder-text;;
+}
+:-ms-input-placeholder {
+  color: @placeholder-text;;
+}
+
+
+.employee-setup-wizard-portlet {
+  .content-filter.styled-filter {
+    form {
+      input#businessName::-webkit-input-placeholder {
+      font-weight:800;
+      font-style:italic;
+      font-size:13px; 
+      color:#000;
+      }
+      input#businessName:-moz-placeholder { /* Firefox 18- */
+      font-weight:800;
+      font-style:italic;
+      font-size:13px; 
+      color:#000;
+      }
+      input#businessName::-moz-placeholder {  /* Firefox 19+ */
+      font-weight:800;
+      font-style:italic;
+      font-size:13px; 
+      color:#000;
+      }
+      input#businessName:-ms-input-placeholder {  
+      font-weight:800;
+      font-style:italic;
+      font-size:13px; 
+      color:#000;
+      }
+    }
+  }
+}
+
+@media(max-width:992px){
+.employee-setup-wizard-portlet {
+  .content-filter.styled-filter {
+      form {
+        input#businessName::-webkit-input-placeholder {
+        font-weight:800;
+        font-style:italic;
+        font-size:11px; 
+        color:#000;
+        }
+        input#businessName:-moz-placeholder { /* Firefox 18- */
+        font-weight:800;
+        font-style:italic;
+        font-size:11px; 
+        color:#000;
+        }
+        input#businessName::-moz-placeholder {  /* Firefox 19+ */
+        font-weight:800;
+        font-style:italic;
+        font-size:11px; 
+        color:#000;
+        }
+        input#businessName:-ms-input-placeholder {  
+        font-weight:800;
+        font-style:italic;
+        font-size:11px; 
+        color:#000;
+        }
+      }
+    }
+  }
+}
+/* Advanced Search Styling */
+.content-filter .advancedSearchContainer .panel-heading h4 {
+  font-size: 10px;
+  color: #A4A4A4;
+  float: right;
+  margin-right: 8px;
+  margin-top: -8px;
+}
+.content-filter {
+  .panel-group{
+  margin-bottom:0px; 
+}
+  .advancedSearchContainer {
+    .panel{
+    border:none;  
+    box-shadow:none;
+    padding:0px; 
+    width:100%; 
+    background-color:transparent; 
+}
+  .panel-heading{ 
+    box-shadow:none;   
+    background-color:transparent;   
+   width:20%;
+   padding:0px;
+   margin-top:10px; 
+   float:right;
+   position:absolute; 
+   right:5px; 
+    border:none;  
+    } 
+}
+.panel-group .panel-heading + .panel-collapse .panel-body{
+ border:none; 
+margin-left:-15px;
+margin-top:-15px;
+} 
+}
+
+@media (max-width: 360px) {
+  .content-filter.styled-filter form input {
+    width: 100%;
+    font-size:10px;
+    max-width: 100%;
+  }
+}
+
+.events-angular-portlet .content-filter {
+top: -50px;
+}
+
+.b2b-exhange-portlet .content-filter {
+   top: -48px;
+   padding-bottom: 30px;
+}

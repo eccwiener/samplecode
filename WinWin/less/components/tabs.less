@@ -1,0 +1,306 @@
+/***
+
+  TABS appear at the top of the following pages.
+
+    1. Alliances
+    2. B2b Exchange
+    3. Coop Marketing
+    3  Events
+    4. Wisdom
+    5. Dashboard
+
+  To target specific tabs that are in a portlets please use the portlet class wrapper.
+  If it is a web content please apply your own class.
+
+***/
+
+.header-content {
+    margin-top: -98px;
+    margin-left: 0px;
+   .nav-tabs {
+    border-bottom: 0;
+    }
+     .nav-tabs > li {
+    width: 100%;
+    max-width: 14%;
+    text-align: center;
+    }
+    .nav-tabs > li > a {
+    border-radius: 0;
+    background: #18517f;
+    color: #fff;
+    border-color: #18517f;
+    margin-right: 2px;
+    font-size: 12px;
+    text-rendering: auto;
+    }
+    .nav-tabs > li > a:hover {
+    border-color: #DFDFDF;
+    background-color: #DFDFDF;
+    }
+    .nav-tabs > li.active a {
+    background: #DFDFDF;
+    color: #343539;
+    border-color: #DFDFDF;
+    text-rendering: auto;
+    }
+    .nav-tabs > li.active > a:hover {
+    border-color: #DFDFDF;
+    opacity:.9;
+    background-color: #DFDFDF;
+    }
+    .nav-tabs > li > a:hover,
+    .nav-tabs > li > a:focus,
+    .nav-tabs > li > a:active {
+    color: #000;
+    }
+  }
+/*hide nav tabs for responsive*/
+@media (max-width: 767px) {
+  .header-content .nav-tabs {
+    display:none;
+  }
+   .navbar-form.navbar-right.searchBar {
+    display:none;
+  }
+  .sub-header {
+    min-height:  40px;
+    max-height: 40px;
+  }
+}
+/* NEW CODE STARTS */
+.dashboard-portlet .header-content .nav-tabs > li {
+  width: 100%;
+  max-width: 14%;
+  min-width: 20%;
+  text-align: center;
+} 
+.events-angular-portlet  .header-content .nav-tabs {
+  margin-top:-3px;
+}
+
+.b2b-exhange-portlet .header-content,  
+.events-angular-portlet .header-content,    
+.coop-marketing-portlet .header-content {
+  margin-top: 3px;
+  margin-left: 0px;
+  }
+.b2b-exhange-portlet {
+  margin-top: 30px;
+  .header-content {
+    .nav-tabs > li {
+    width: 100%;
+    max-width: 13.5%;
+    text-align: center;
+    }
+    .nav-tabs > li.active > a:hover {
+    border-color: #DFDFDF;
+    background-color: #DFDFDF;
+    }
+    .nav-tabs > li.active a {
+    background: #DFDFDF;
+    color: #343539;
+    border-color: #DFDFDF;
+    text-rendering: auto;
+    }
+    .nav-tabs > li > a {
+    border-radius: 0;
+    background: #18517f;
+    color: #fff;
+    border-color: #18517f;
+    margin-right: 2px;
+    font-size: 12px;
+    text-rendering: auto;
+    }
+    .nav-tabs > li > a:hover {
+    border-color: #DFDFDF !important;
+    color: #000 !important;
+    background-color: #DFDFDF !important;
+    }
+  }
+}
+.alliance-portlet .header-content {
+  margin-top: -98px;
+  margin-left:-15px;
+ .nav-tabs {
+  border-bottom: 0;
+  }
+  .nav-tabs > li {
+  width: 100%;
+  max-width: 12%;
+  text-align: center;
+  }
+  .nav-tabs > li.active > a:hover {
+  border-color: #DFDFDF;
+  background-color: #DFDFDF;
+  }
+  .nav-tabs > li.active a {
+  background: #DFDFDF;
+  color: #343539;
+  border-color: #DFDFDF;
+  text-rendering: auto;
+  }
+   .nav-tabs > li > a {
+  border-radius: 0;
+  background: #18517f;
+  color: #fff;
+  border-color: #18517f;
+  margin-right: 2px;
+  font-size: 12px;
+  text-rendering: auto;
+  }
+  .nav-tabs > li > a:hover {
+  border-color: #DFDFDF !important;
+  color: #000 !important;
+  background-color: #DFDFDF !important;
+  }
+}
+/*END NEW CODE*/
+ .aui .nav-tabs > .active > a, .aui .nav-tabs > .active > a:hover, .aui .nav-tabs > .active > a:focus
+.header-content .nav-tabs > li.active > a:hover {
+  border-color: #DFDFDF;
+  opacity:1;
+  background-color: #DFDFDF;
+}
+#p_p_id_b2bexhange_WAR_Eventsportlet_ .header-content .nav-tabs > li > a {
+font-size: 11px;
+}
+#p_p_id_eventsangularportlet_WAR_Eventsportlet_ .header-content .nav-tabs > li   {
+margin-top:3px;
+}
+
+
+/*new responsive tab code*/
+@media (max-width: 992px) {
+  .dashboard-portlet .header-content {
+    .nav-tabs > li {
+    max-width: 14%;
+    min-width: 22%;
+    }
+    .nav-tabs > li > a {
+    font-size: 11px;
+    }
+  }
+  .alliance-portlet .header-content {
+    .nav-tabs > li {
+    width: 100%;
+    max-width: 15%;
+    text-align: center;
+    }
+    .nav-tabs > li > a {
+    font-size: 11px;
+    }
+  }
+  .b2b-exhange-portlet .header-content {
+    .nav-tabs > li {
+    width: 100%;
+    max-width: 15.5%;
+    }
+     .nav-tabs > li > a {
+    font-size: 11px;
+   }
+    .nav-tabs > li {
+    width: 100%;
+    max-width: 15%;
+    } 
+    .nav-tabs > li > a {
+    font-size: 11px;
+    }
+  }
+  .coop-marketing-portlet .content-filter {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    top: -45px;
+  }
+  .coop-marketing-portlet #all-marketing.tab-pane.active h1 {
+    z-index: 600 !important;
+    font-size: 18px !important;
+    top: 2px !important;
+  }
+  .header-content .nav-tabs > li {
+    width: 100%;
+    max-width: 15%;
+    text-align: center;
+  }
+  .header-content .nav-tabs > li a{
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 980px) {
+  .coop-marketing-portlet .header-content .nav-tabs > li {
+    max-width: 16%;
+  }
+  #p_p_id_alliance_WAR_Membershipportlet_ .header-content .nav-tabs > li {
+    width: 25%;
+    text-align: center;
+  }
+  #p_p_id_b2bexhange_WAR_Eventsportlet_ .header-content .nav-tabs > li > a {
+    font-size: 11px;
+  }
+  .header-content .nav-tabs > li {
+    width: 100%;
+    max-width: 16%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .coop-marketing-portlet #all-marketing.tab-pane.active h1 {
+    display:none;
+  }
+  #p_p_id_b2bexhange_WAR_Eventsportlet_ {
+    .header-content .nav-tabs > li {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    }
+    .header-content .nav-tabs > li > a {
+    font-size: 16px;
+   }
+ }
+    #p_p_id_eventsangularportlet_WAR_Eventsportlet_ {
+      .header-content .nav-tabs > li {
+      width: 100%;
+      text-align: center;
+      }
+    .header-content .nav-tabs > li a{
+    font-size:16px;
+    }
+  }
+  #p_p_id_coopmarketing_WAR_Eventsportlet_ .header-content {
+    .nav-tabs > li {
+    max-width: 100%;
+    width:100%;
+    text-align: center; 
+    }   
+    .nav-tabs > li a{
+    width: 100%;
+    font-size:16px;
+    text-align: center;  
+    }
+  }
+}
+
+@media (max-width: 525px) {
+#p_p_id_dashboard_WAR_Membershipportlet_ .header-content .nav-tabs > li {
+  width: 100%;
+  text-align: center;
+}
+ #p_p_id_alliance_WAR_Membershipportlet_ .header-content .nav-tabs > li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 525px) {
+  #p_p_id_dashboard_WAR_Membershipportlet_ .header-content .nav-tabs > li {
+    width: 100% !important;
+    text-align: center;
+  }
+}
+@media (max-width: 475px) {
+  #p_p_id_dashboard_WAR_Membershipportlet_ .header-content .nav-tabs > li {
+    width: 100% !important;
+  }
+}

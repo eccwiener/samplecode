@@ -1,0 +1,101 @@
+/***
+
+  BUSINESS AUTOCOMPLETE this component appears on the registrations process but can be resused anywhere
+  a business listing autocomplete feature is needed.
+
+***/
+
+
+.angucomplete-holder {
+  position: relative;
+}
+
+.angucomplete-dropdown {
+  position: relative;
+  margin: 0 auto;
+  max-width: 416px;
+  width: 100%;
+  z-index: 1;
+  padding: 10px 5px;
+  background-color: #a0a0a0;
+  cursor: pointer;
+
+  .btn-warning{
+    width: 100%;
+    border: 1px solid #888;
+    margin-top:3px;
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+}
+
+.angucomplete-searching {
+  color: #fff;
+  font-size: 12px;
+}
+
+.angucomplete-description {
+  font-size: 12px;
+}
+
+.angucomplete-row {
+/*padding: 5px;
+color: #000000;
+margin-bottom: 4px;*/
+  text-align: left;
+  width: 100%;
+  padding:15px;
+  background-color: #fff;
+  margin-bottom: 3px;
+  border: 1px solid #888;
+
+}
+
+.angucomplete-selected-row, .angucomplete-row:hover {
+  background-color: #F5F5F5;
+  color: #000;
+}
+
+.angucomplete-image-holder {
+  padding-top: 2px;
+  float: left;
+  height: 34px;
+  width: 34px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.angucomplete-image {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  border-color: #ececec;
+  border-style: solid;
+  border-width: 1px;
+}
+.grey-arrow{
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 12px 30px;
+  border-color: transparent transparent #a0a0a0 transparent;
+}
+.blue-arrow{
+  display: inline-block;
+  float: right;
+  padding-top: -5px;
+  margin-top: -10%;
+}
+
+@media (max-width:480px){
+  .blue-arrow{
+    margin-top: -15%;
+  }
+}
+@media(max-width:400px){
+  .blue-arrow{
+    display: none;
+  }
+}

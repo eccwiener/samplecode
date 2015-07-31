@@ -1,0 +1,57 @@
+<!--
+<footer id="footer" role="contentinfo">
+	<div class="wrapper container-16" id="footer-wrapper">
+    	<div class="container grid-12">
+        	<div class="grid-inner clearfix">
+          		<div class="clearfix" id="footer">  
+          			<div class="region region-footer">
+    					<div style="text-align: center; margin: 20px;">
+    						<div style="margin-bottom: 20px;" id="global-footer">
+    							<a rel="lightframe[|width:500px; height:460px; scrolling: auto;]" href="/demo" class="lightbox-processed">
+    								Video
+    							</a> 
+    							| 
+    							<a class="active" href="/faqs">
+    								FAQ
+    							</a> 
+    							| 
+    							<a href="/contact">
+    								Contact Us
+    							</a> 
+    							| 
+    							<a href="/report-abuse" style="display: none;">
+    								Report Spam/Abuse
+    							</a>
+    						</div>
+    						<div>
+		    					<a href="/about">
+		    						About WinWin
+		    					</a> 
+		    					| 
+		    					<a href="/advertising">
+		    						Advertising
+		    					</a> 
+		    					| 
+		    					<a href="/sponsorship">
+		    						Sponsorship
+		    					</a> 
+		    					| 
+		    					<a href="/privacy-policy">
+		    						Privacy Policy
+		    					</a> 
+		    					| 
+		    					<a href="/terms">
+		    						Terms of Use
+		    					</a>
+		    				</div>
+		    			</div>
+			    		<div style="text-align: center; margin: 20px;">
+			    			&copy;Copyright 2014 Win-Win Solutions, LLC. All rights reserved.
+			    		</div>  
+			    	</div>
+				</div>
+			</div>
+	 	</div>
+    </div>
+</footer>
+-->

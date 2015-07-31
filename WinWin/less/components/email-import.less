@@ -1,0 +1,65 @@
+/***
+
+  EMAIL IMPORT appears under the Network Center of the Business Dashboard.
+  This component is used to import contacts from various email client API'S.
+
+***/
+
+.email-list {
+  text-align: justify;
+  &:after {
+    display: inline-block;
+    width: 100%;
+    content: "";
+  }
+  li {
+    display: inline-block;
+    width: 84px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid @email-list-border-color;
+    vertical-align: top;
+    padding-top: 5px;
+    &:hover{
+      border-color:  @email-list-border-hover;
+      box-shadow: 0px 1px 3px @email-list-text-color;
+      -webkit-box-shadow: 0px 1px 3px @email-list-text-color;
+      -moz-box-shadow: 0px 1px 3px @email-list-text-color;
+    }i{
+       min-height: 32px;
+       display: inline-block;
+     }
+    span{
+      display: block;
+      font-size: 12px;
+    }
+    a{
+      display: block;
+      color: @email-list-text-color;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+} // end of email list
+
+
+//responsive styles
+
+@media (max-width: 570px) {
+  .email-list {
+    text-align: center;
+    li {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .small-mobile-fullWidth {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+

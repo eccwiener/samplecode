@@ -1,0 +1,196 @@
+/***
+  MOBILE NAV appears on mobile - unhide the mobile and hide the big nav bar to replace 
+  -- Alliances/Network, B2B, Co-Op, Events, Business Wisdom
+  Includes mobile search bar as well as CONTENT FILTER DROPDOWNS FOR MOBILE
+***/
+
+.b2bMobile {
+  visibility: hidden;
+  display: none;
+}
+@media (min-width: 768px) {
+  .mobileNav,
+  .navbar-form.navbar-right.mobileSearch {
+    display: none; 
+  }
+}
+@media (max-width: 767px) {
+  .navbar-form.navbar-right.mobileSearch {
+  display: block;
+  }
+  .content-filter.big {
+  display: none;
+  }
+  .mobileNav {
+    .content-filter {
+      margin-top: -30px;
+      z-index: 100;
+      border: 2px solid #292929;
+      padding: 10px;
+      margin-left: 0px;
+      }
+      .dropdown-menu {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      min-width: 101%;
+      margin: 0px 0px 0px 0px;
+      }
+      .btn.btn-primary.dropdownButton {
+      top: -88px;
+      height: 42px;
+      font-family: 'TradeGothicNextW01-Ligh 693250';
+      font-size: 14px;
+      position: relative;
+      background-color: #292929;
+      border: #292929 2px solid;
+      z-index: 100;
+      }
+      .btn.btn-primary.dropdownButton span.caret {
+      margin-left: 10px;
+      }
+      .btn.btn-primary.dropdownButton span.caret img{
+      display: none;
+      }
+    }
+  #all-alliances h1.text-center {
+  display: none;
+  }
+}
+@media (max-width: 767px) {
+  .b2bMobile {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    top: 30px;
+    z-index: 100;
+    width: 42%;
+    background-color: #f99639;
+    color: #FFF;
+    height: 45px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .b2bMobile a {
+    color: #FFF;
+    font-family: 'TradeGothicNextW01-Ligh 693250';
+    font-size: 16px;
+  }
+  .b2bMobile a:hover {
+    text-decoration: none;
+  }
+  .b2bMobile a .glyphicon.glyphicon-plus-sign {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .opporunities.tab-content .mobileNav.searchDropdown {
+    top: 150px;
+    position: relative;
+    width: 45%;
+    left: 45%;
+  }
+  .b2bMobile.postEvent {
+    top: -17px;
+  }
+  .mobileNav #style-filter.content-filter {
+    margin-top: -22px;
+    z-index: 100;
+    border: 2px solid #292929;
+    border-top: none;
+    padding: 10px;
+    margin-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+  .mobileNav #style-filter.content-filter .form-group {
+    margin-bottom: 3px;
+    padding-bottom: 0px;
+  }
+  .mobileNav #style-filter.content-filter .btn.btn-warning {
+    bottom: 0px;
+    height: 25px;
+  }
+  .b2bMobile {
+    top: -15px;
+    font-size: 12px;
+    width: 42%;
+    max-height: 40px;
+  }
+     .events-angular-portlet .mobileNav .btn.btn-primary.dropdownButton {
+    top: -55px;
+  }
+}
+@media (max-width: 600px) {
+  .b2bMobile {
+    top: -15px;
+    font-size: 12px;
+    width: 42%;
+    max-height: 40px;
+  }
+  .mobileNav .btn.btn-primary.dropdownButton {
+    top: -88px;
+    max-height: 40px;
+    font-size: 12px;
+  }
+  .coop-marketing-portlet .mobileNav .btn.btn-primary.dropdownButton {
+    max-height: 40px;
+    font-size: 12px;
+  }
+      .events-angular-portlet .mobileNav .btn.btn-primary.dropdownButton {
+  top: -54px;
+    }
+}
+@media (max-width: 480px) {
+  .b2bMobile {
+    top: -28px;
+    width: 42%;
+    height: 40px;
+  }
+  .b2bMobile.postEvent {
+    top: -28px;
+  }
+  .mobileNav .btn.btn-primary.dropdownButton {
+    top: -65px;
+  }
+  .alliances .mobileNav .btn.btn-primary.dropdownButton {
+    top: -5px;
+  }
+  .alliances .mobileNav .content-filter {
+    margin-top: 20px;
+  }
+  .coop-marketing-portlet .mobileNav .btn.btn-primary.dropdownButton {
+    max-height: 40px;
+    font-size: 12px;
+  }
+  .events-angular-portlet .mobileNav .btn.btn-primary.dropdownButton {
+    top: -65px;
+  }
+}
+@media (max-width: 460px) {
+  .mobileNav .btn.btn-primary.dropdownButton {
+    top: -100px;
+    font-size: 12px;
+    z-index: 100;
+  }
+}
+@media (max-width: 400px) {
+  .mobileNav .btn.btn-primary.dropdownButton {
+    top: -100px;
+    font-size: 12px;
+  }
+  .b2bMobile a {
+    color: #FFF;
+    font-family: 'TradeGothicNextW01-Ligh 693250';
+  }
+}
+@media (max-width: 380px) {
+  .mobileNav .btn.btn-primary.dropdownButton {
+    top: -100px;
+    font-size: 11px;
+  }
+  .b2bMobile a {
+    color: #FFF;
+    font-family: 'TradeGothicNextW01-Ligh 693250';
+    font-size: 8px !important;
+  }
+}

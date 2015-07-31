@@ -1,0 +1,300 @@
+/*event calendar styling */
+/*new code*/
+.event-calendar-portlet {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  width: 100%;
+  padding: 0px;
+  .well {
+  min-height: 20px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  background-color: #FFF;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  border: 1px solid #aeaeae;
+  width: 100%;
+  padding: 10px;
+  }
+  .btn-primary {
+  margin-left: 82%;
+  position:relative;
+  top: 0px; 
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  border: 1px solid #aeaeae;
+  }
+  td .btn {
+  margin: 50px;
+  }
+  td .btn[disabled] {
+  color: black;
+  background-color: #FFF;
+  padding: 0px;
+  border: 1px solid #aeaeae;
+  margin: 0px;
+  }
+  td .btn-sm,
+  td .btn-default {
+  color: #FFF;
+  font-size: 14px;
+  background-color: #56a8da;
+  cursor: pointer;
+  margin: 0px;
+  padding: 5px;
+  padding-left: 0px;
+  min-width: 41px;
+  max-width: 41px;
+  }
+  td .btn-sm:hover {
+  opacity: .8;
+  }
+  .pull-right,
+  .pull-left {
+  margin: 0px;
+  padding: 0px;
+  }
+  span.ng-binding.text-info {
+  background-color: red;
+  padding: 12px;
+  border-radius: 2px;
+  overflow: hidden;
+  max-width: 20px;
+  color: #FFF;
+  }
+}
+/* Add Event Portlet */
+.add-event-portlet {
+  margin-top: 0px !important;
+}
+.add-event-portlet a.btn-link {
+  height: 10px;
+  margin-top: -40px;
+}
+.add-event-portlet p {
+    font-size: 10px;
+  width: 100%;
+  margin-left: 30px;
+top: -22px;
+font-weight:600;
+ position:absolute;
+ text-align:justify;
+}
+.add-event-portlet .btn-default,
+.add-event-portlet span.input-group-addon {
+border: 1px solid #aeaeae;
+  font-size: 10px;
+}
+.add-event-portlet .input-group > table .btn-default:nth-child(1){
+   margin-top: -2px; 
+}
+.add-event-portlet .input-group > table  input:nth-child(1){
+  margin-top: -7px; 
+} 
+.add-event-portlet .input-group {
+  margin-top: -35px;
+}
+.add-event-portlet .input-group input{  
+border: 1px solid #aeaeae;
+}
+.add-event-portlet .input-group span {
+  background-color: transparent;
+   border-color: transparent;
+  margin-top: 8px;
+}
+.add-event-portlet .glyphicon-chevron-up {
+  margin-top: 20px;
+}
+.add-event-portlet .glyphicon-chevron-down {
+  position: relative;
+}
+.add-event-portlet #datetime-1,
+.add-event-portlet #datetime-2 {
+  max-height: 40px;
+  border-color: transparent;
+  max-width: 200px;
+  padding-left: 55px;
+  float: left;
+  margin-right: 50px;
+}
+.add-event-portlet .post-form input, .post-form textarea,
+.add-event-portlet input {
+border: 1px solid #aeaeae;
+}
+.add-event-portlet input#inputdatetime {
+  font-size: 12px;
+  color: #A3A3A3;
+border: 1px solid #aeaeae;
+}
+.add-event-portlet .col-xs-8 .row input{
+  border: 1px solid #FFF;
+}
+
+.add-event-portlet input.form-control {
+  position:relative;
+  top:1px;
+  font-size: 12px;
+}
+.add-event-portlet .btn-primary {
+  font-size: 10px;
+  padding: 2px 4px;
+  width: 100%;
+}
+.add-event-portlet .portlet-body {
+  font-size: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/*create event dropdown from sidebar */
+.create-event {
+  li.dropdown-menu {
+  width: 240px;
+} 
+  .dropdown-menu {
+  width: 210px; 
+
+  .btn.btn-default.btn-sm {
+  padding: 0px;
+  margin: 5px;
+  width:20px; 
+  height: 25px;
+  font-size: 12px;
+}
+  .btn-group{  
+  margin-top:-5px;
+    .btn-info{
+    width:50px; 
+    } 
+  }
+  .btn-success{
+  margin-top:-5px; 
+  }
+}
+}
+/* event side calendar responsive*/
+@media (max-width: 992px) {
+  .event-calendar-portlet {
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 85%;
+    margin-left: 25px;
+      .pull-right,
+      .pull-left {
+      margin: -4px;
+      padding: 0px;
+      }
+       span.ng-binding.text-info {
+    background-color: red;
+    border-radius: 2px;
+    overflow: hidden;
+    color: #FFF;
+    padding: 5px;
+    }
+      .well{
+      padding:2px;  
+    }
+      td .btn-sm,
+      td .btn-default {
+      color: #FFF;
+      font-size: 11px;
+      text-align: center;
+      background-color: #56a8da;
+      cursor: pointer;
+      margin: 0px;
+      padding: 5px;
+      max-width: 25px;
+      min-width: 25px;
+      height: 25px;
+    }
+    .text-center {
+    padding: 1px;
+    }
+     .btn-primary {
+    font-size: 11px;
+    }
+    tr th .btn-default{
+    font-size: 11px;
+    margin: 0px;
+    border:none;
+    padding: 0px;
+    width: 100%;
+    } 
+     tr th{
+      max-width:20px;   
+    }
+  }
+  .add-event-portlet {
+    .btn-default, span.input-group-addon {
+    border-color: transparent;
+    font-size: 8px;
+    height: 25px;
+    width: 75%;
+    overflow: hidden;
+    padding: 10px;
+  }
+}
+  .create-event .input-group {
+    margin-top: .5%;
+  }
+  .create-event > div:nth-child(2) > div > input {
+    display: none;
+  }
+  .create-event > div:nth-child(1) > div > input {
+    display: none;
+  }
+
+}
+@media (max-width: 980px) {
+  .event-calendar-portlet {
+    .well {
+    padding: 5px;
+  }
+   td .btn-sm,
+  td .btn-default {
+    color: #FFF;
+    font-size: 11px;
+    text-align: center;
+    background-color: #56a8da;
+    cursor: pointer;
+    margin: 1px;
+    padding: 2px;
+    max-width: 22px;
+    min-width: 22px;
+    height: 22px;
+  }
+  button.btn-primary{
+    margin-top: 0px; 
+  }
+}
+}
+@media (max-width: 992px) {
+.add-event-portlet .col-xs-8 .row input {
+  width:100%;
+}
+.add-event-portlet {
+  margin-left: 5px !important;
+}
+.add-event-portlet a.btn-link {
+  height: 10px;
+  margin-top: -40px;
+}
+.add-event-portlet p {
+    font-size: 10px;
+    width: 85%;
+    margin-left: 20px;
+    top: -30px;
+    line-height: 11px;
+    font-weight: 600;
+    position: absolute;
+    text-align: justify;
+  }
+.add-event-portlet .post-form-wrapper{
+  width: 88%;
+}
+.event-calendar-portlet button.btn-primary {
+margin-left: 140px;
+ }
+}

@@ -1,0 +1,101 @@
+<header id="banner" role="banner">
+	<div class="wrapper" id="top-menu-bar-wrapper">
+		<div class="container grid-12">
+			<div class="container-inner clearfix">
+				<div class="group-cols-1 group-1 grid grid-12">
+					<div class="section" id="top-menu-bar">
+						<div class="grid-inner clearfix">
+							<div id="btn_login">
+								<a title="Member Login" href="/user/login">
+									<img alt="Member Login" src="/sites/all/themes/winwin_sirate/images/btn_login.jpg">
+								</a>
+							</div>
+							
+							<!-- TOP MENU BAR REGION -->
+							
+							<div class="region region-top-menu-bar">
+    							<div class="tb-megamenu tb-megamenu-menu-top-menu style-black">
+      								<button type="button" class="btn btn-navbar tb-megamenu-button" data-toggle="collapse" data-target=".nav-collapse">
+      									<i class="icon-reorder"></i>
+    								</button>
+	    							<div class="nav-collapse collapse">
+		    							<ul class="tb-megamenu-nav nav level-0 items-5">
+		  									<li class="tb-megamenu-item level-1 mega" data-hidesub="0" data-hidewcol="0" data-group="0" data-alignsub="" data-caption="" data-xicon="" data-class="" data-type="menu_item" data-level="1" data-id="2249">
+			  									<a class="" href="/">
+			        								Home
+			        							</a>
+		  									</li>
+											<li class="tb-megamenu-item level-1 mega active" data-hidesub="0" data-hidewcol="0" data-group="0" data-alignsub="" data-caption="" data-xicon="" data-class="" data-type="menu_item" data-level="1" data-id="1847">
+		  										<a class="" href="/faqs">
+		        									FAQ
+		        								</a>
+		  									</li>
+											<li class="tb-megamenu-item level-1 mega" data-hidesub="0" data-hidewcol="0" data-group="0" data-alignsub="" data-caption="" data-xicon="" data-class="" data-type="menu_item" data-level="1" data-id="1845">
+		  										<a class="" href="/features">
+		        									Features
+		        								</a>
+		  									</li>
+											<li class="tb-megamenu-item level-1 mega" data-hidesub="0" data-hidewcol="0" data-group="0" data-alignsub="" data-caption="" data-xicon="" data-class="" data-type="menu_item" data-level="1" data-id="1846">
+		  										<a class="" href="/pricing">
+		        									Pricing
+		        								</a>
+		  									</li>
+										</ul>
+	      							</div>
+	  							</div>
+	  						</div>
+								<!-- //TOP MENU BAR REGION -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="wrapper" id="header-wrapper">
+    	<div class="container grid-12">
+    	</div>
+  	</div>
+  
+  	<div class="wrapper" id="slideshow-wrapper">
+		<div class="container grid-12">
+			<div class="container-inner clearfix">
+				<!-- LOGO -->
+				<div id="winwin-logo">
+					<a id="logo" title="Home" href="/">
+						<img alt="Home" src="/sites/all/themes/winwin_sirate/images/logo.png">
+					</a>
+				</div>
+				<!-- //LOGO -->
+				<div id="homepage-slogan">
+					Changing How Businesses Work Together. <span style="font-size: 0.6em; vertical-align: super;">&trade;</span>
+				</div>		
+			</div>
+		</div>
+	</div>
+	
+	<!--
+	<div id="heading">
+		<h1>WinWin Header</h1>
+		<h1 class="site-title">
+			<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+				<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+
+				#if ($show_site_name)
+					<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
+						$site_name
+					</span>
+				#end
+			</a>
+
+		</h1>
+
+		<h2 class="page-title">
+			<span>$the_title</span>
+		</h2>
+	</div>
+	-->
+	#if ($has_navigation || $is_signed_in)
+		#parse ("$full_templates_path/navigation.vm")
+	#end
+</header>

@@ -1,0 +1,62 @@
+/***
+
+  INDUSTRY SORT appears on the business dashboard underneath the
+  Alliance Info table.
+
+***/
+.sidebar-main {
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  background-color: #FFF;
+  border:1px solid #aeaeae;
+  width: 100%;
+  margin-left: 10%;
+  padding-top: 10px;
+  margin-top: 5%;
+  .text-right {
+  font-size: 12px;
+  margin-right: 5px;
+  }
+  li {
+  padding: 5px;
+  padding-left: 15px;
+  width: 100%;
+  font-size: 12px;
+  margin: 5px 0;
+  }
+  li span {
+  float: right;
+  width: 15%;
+  padding: 1px 0;
+  background: #4aa1d7;
+  text-align: center;
+  color: #fff;
+  }
+  li span.active {
+  background: #f3ac06;
+  }
+  li + li {
+  border-top: 1px solid #e2e2e2;
+  }
+  li a {
+  color: #000;
+  font-size: 12px;
+  } 
+  li a:hover {
+  text-decoration: none;
+  color: #18517F;
+  }
+}
+
+
+
+ // must wrap div with class .sidebar for these styles to apply.
+
+/*start responsive*/
+
+@media(max-width:992px){
+  .sidebar-main {
+  margin-left: 0%;
+}
+}

@@ -1,0 +1,79 @@
+/***
+
+  ALERT MODALS appear where the garbage glyphicon appears.
+
+***/
+//alertmodal
+
+.alertModal{
+  .alert{
+    margin-bottom: 0 ;
+  }
+  p{
+    font-size: 21px;
+    margin: 15px 0;
+  }
+}
+
+.alert-success{
+	&.alert{
+	color: #fff !important;
+	background-color:#7eb47a !important;
+	border:transparent !important;
+	padding: 15px 30px;
+	border-radius: 0;
+	text-shadow: none;
+	z-index: 1000;
+	position: relative;
+	width: 100%;
+	}
+	.close{
+		color: #fff;
+	    text-shadow: none;
+	    opacity: 1;
+	}
+}
+
+.reg-wizard .alert.alert-success{
+position:absolute;
+top:-170px;
+width:100%; 
+margin-left:-15px;
+}
+
+.create-advertisement-portlet .alert.alert-success{
+top:-90px;
+width:100%; 
+}
+
+@media(max-width:768px){
+.alert-danger {
+	p{ 
+  font-size:12px; 
+} 
+	 .btn-danger,  .btn-default{
+  font-size:12px; 
+  width:100%;
+  margin:0px;
+  margin-top:5px;
+} 
+} 
+}
+@media(max-width:360px){
+.alert-danger {
+	p{ 
+  font-size:12px;
+  width:90%; 
+} 
+	.btn-danger, .btn-default{
+  font-size:12px; 
+  margin:0px; 
+  margin-top:5px;
+} 
+}
+}
+@media(max-width:330px){
+.alert-danger p{   
+  width:99%;
+} 
+}

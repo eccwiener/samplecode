@@ -1,0 +1,30 @@
+<div class="btn-group">
+    <label class="btn btn-default" ng-model="notification.daily" btn-checkbox>Daily</label>
+    <label class="btn btn-default" ng-model="notification.weekly" btn-checkbox>Weekly</label>
+    <label class="btn btn-default" ng-model="notification.monthly" btn-checkbox>Monthly</label>
+</div>
+</div>
+<div class="check-list">
+    <input type="checkbox" ng-model="notification.allianceRequests" id="allianceRequests" name="allianceRequests">
+    <label for="allianceRequests"><span></span>User requests our alliance</label>
+</div>
+<div class="check-list">
+    <input type="checkbox" ng-model="notification.allianceApproval" id="approveAlliance" name="approveAlliance">
+    <label for="approveAlliance"><span></span>User approves our alliance</label>
+</div>
+<div class="check-list">
+    <input type="checkbox" ng-model="notification.postingComments" id="comments" name="comments">
+    <label for="comments"><span></span>User comments on our postings</label>
+</div>
+<div class="check-list">
+    <input type="checkbox" ng-model="notification.privateMsgs" id="privateMsgs" name="privateMsgs">
+    <label for="privateMsgs"><span></span>User sends a private message</label>
+</div>
+<div class="check-list">
+    <input type="checkbox" ng-model="notification.siteReleases" id="siteReleases" name="siteReleases">
+    <label for="siteReleases"><span></span>New feature & site releases</label>
+</div>
+<div class="btn-content text-right">
+    <a href="#" class="btn-cancel close-panel">Cancel</a>
+    <button type="submit" class="btn-save" ng-click="notification.save()">Save</button>
+</div>

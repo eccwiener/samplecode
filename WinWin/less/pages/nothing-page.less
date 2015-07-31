@@ -1,0 +1,254 @@
+/*new code for empty pages */
+.empty-page {
+  width: 99%;
+  min-height: 165px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  border:1px solid #aeaeae;
+  font-family: 'Century Gothic W01';
+  background-color: #FFF; 
+  padding: 12px;  
+  position: relative;
+  z-index: 1000;
+  margin: 5px;
+  margin-top:25px;
+  p {
+  font-family: 'TradeGothicNextW01-Ligh 693250';
+  } 
+}
+@media(max-width:992px){
+  .empty-page {
+  width: 94%;
+  min-height: 175px;
+  padding: 12px;
+  position: relative;
+  z-index: 1000;
+  margin: 5px; 
+  padding-top:0px;
+    h3{
+     font-family: 'Century Gothic W01';
+     font-size: 16px;
+    }
+    p  {
+    font-size:11px;
+    }
+    a#save-listing small{
+    font-size:10px;
+    }
+  }
+}
+
+/* Pages without anything on it for no profile or no business found */
+.no-business {
+  height: 200px;
+  .row-fluid .span3 {
+  border: 1px solid #c8c8c8; 
+  height: 162px;
+  text-align:center;  
+  }
+  .row-fluid .span3 .btn-primary {
+  width: 100%;
+  position: relative;
+  top: 22px;
+  }
+  .row-fluid .span3 img {
+  position: relative;
+  top: 10px;
+  left: 0px;
+  width: 80px;
+  height:70px;
+  }
+}
+@media(max-width:768px){
+  .no-business {
+    height: 800px;
+    .row-fluid .span3{
+    margin-top:30px;
+    }
+  }
+}
+/*no page logged out*/
+.no-page-loggedout .map {
+  margin-top: 0%;
+  position: relative;
+  display: block;
+}
+.top-text {
+  margin-top: -20px;
+  width: 100%;
+  h1 {
+  color: #FFF;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Century Gothic W01';
+  width: 30%;
+  margin-top: 10px;
+  margin-left: 75px;
+  text-align: center;
+  } 
+ .img-responsive {
+  float: right;
+  margin-top: -60px;
+  position: relative;
+  width: 250px;
+  left: -475px;
+  }
+}
+@media (max-width: 1200px) {
+  .top-text .img-responsive {
+    float: right;
+    margin-top: -60px;
+    position: relative;
+    width: 250px;
+    left: -275px;
+  }
+}
+@media(max-width:768px){
+ .col-xs-6.col-md-3{
+  width:25%;
+ }
+ .top-text {
+    .img-responsive {
+    float: right;
+    margin-top: -45px;
+    position: relative;
+    width: 200px;
+    left: -75px;
+    }
+    h1 {
+    font-size: 15px;
+    width: 45%;
+    }
+  }
+  .top-images .img-responsive {
+  margin-left: 10%;
+  }
+}
+@media(max-width:630px){
+   .top-text .img-responsive {
+  float: right;
+  margin-top: -30px;
+  position: relative;
+  width: 120px;
+  left: -75px;
+  }
+}
+@media(max-width:500px){
+  .top-text {
+    h1 {
+    font-size: 15px;
+    margin-left: -5px;
+    width: 50%;
+    }
+    .img-responsive {
+    float: right;
+    margin-top: -50px;
+    position: relative;
+    width: 150px;
+    left: -45px;
+    }
+  }
+}
+ @media(max-width:480px){
+  .new-map .map .col-lg-12{
+   margin-top:0px;
+  top:0px;
+  position:relative; 
+  }
+}
+@media(max-width:400px){
+  .new-map .map .col-lg-12{
+   margin-top:0px;
+  top:-75px;
+  position:relative; 
+  }
+  .new-message .message .col-xs-6 ul li{
+  width:100%;
+  font-size:9px; 
+  }
+  .top-text {
+    h1 {
+    font-size: 12px;
+    margin-left: -5px;
+    width: 50%;
+    margin-top: 0px;
+    }
+    .img-responsive {
+    float: right;
+    margin-top: -40px;
+    position: relative;
+    width: 120px;
+    left: -45px; 
+    }
+  }
+}
+@media(max-width:380px){
+  .top-images .img-responsive {
+  min-width: 80px;
+  margin-left: -10px;
+  }
+  .top-text {
+    margin-top: -30px;
+    width: 100%;
+      h1 {
+      font-size: 12px;
+      margin-left: -5px;
+      width: 50%;
+      margin-top: 0px;
+      }
+      .img-responsive {
+      float: right;
+      margin-top: -40px;
+      position: relative;
+      width: 100px;
+      left: -45px;
+      }
+    }
+     .new-message {
+      .message {
+        h4{
+        font-size:10px; 
+        }    
+        .col-xs-6 {
+          ul{
+          text-align:left;
+          width: 150px;
+          margin-left:0px;
+            li{
+            width:100%;
+            font-size:8px; 
+            }
+          }
+        }
+        }
+      }
+      .new-map {
+        .map {
+          .col-lg-12 .text-center{
+          font-size:9px; 
+          width:250px;    
+          position:absolute;
+          top: 40px;
+          }
+          h2 {
+          width: 260px;
+          margin-left: -55px;
+          font-size: 10px;
+          margin-top:50px;
+          }
+          p {
+          width: 210px;
+          margin-left: -45px;
+          font-size: 8px;
+          }
+          .text {
+          width: 100%;
+          margin-top: 20%;
+          text-align: center;
+          margin-left: 20%;
+          } 
+        }
+      }
+  }

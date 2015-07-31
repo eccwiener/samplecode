@@ -1,0 +1,198 @@
+/* fixes to the dashboard new code and for lucky orange hidden responsive */
+.signed-out {
+  #cometchat, .cometchat_ccmobiletab_redirect{
+  display:none;
+  }
+}
+
+@media (max-width: 400px) {
+  #luckyext__click_to_chat_btn {
+    top: -12px;
+    overflow: hidden;
+    left: 0px;
+    line-height: 5px;
+    width: 110px; 
+    margin-left: -35px;
+    position: absolute;
+    height: 95px;
+      strong {
+      font-size: 8px;  
+      position: relative;
+      margin-left:0px;
+      } 
+    }
+  #luckyext__watcher_click_to_chat_inside img{
+  top: 30px;
+  left: -65px;
+  position: relative;
+  }
+}
+
+/*new code for dashboard */
+.content-left.col-sm-12.dashboard .tab-content .network .col-sm-12 .individual-invite{
+  background-color: #FFF !important;
+  width: 100%;
+  padding-top: 65px;
+  padding-left:20px;
+  padding-right:20px; 
+  padding-bottom:0px;
+  margin:5px;
+  margin-left: -10px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  font-family: 'Century Gothic W01';
+  background-color: #FFF;
+}
+.network .individual-invite .form-email .email-address {
+  height: 45px;
+  line-height: 45px;
+  width: 67%;
+  padding-right: 0px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-family: 'Century Gothic W01';
+}
+.content-left.col-sm-12.dashboard .tab-content .network .col-sm-12 h1 {
+  margin: 25px;
+  margin-left:10px;
+  position: absolute;
+  font-family: 'Century Gothic W01';
+}
+.content-left.col-sm-12.dashboard .tab-content .network .col-sm-12 h3 {
+  margin-top: 25px;
+  font-family: 'Century Gothic W01';
+}
+@media(max-width:535px){
+  .network .individual-invite .form-email input[type="submit"] {
+  font-size:12px;
+  }
+  .content-left.col-sm-12.dashboard .tab-content .network .col-sm-12 h1 {
+  margin: 15px;
+  font-size:20px;
+  position: absolute;
+  font-family: 'Century Gothic W01';
+}
+}
+@media(max-width:420px){
+  .network .individual-invite .form-email input[type="submit"] {
+  font-size:12px;
+  }
+  .content-left.col-sm-12.dashboard .tab-content .network .col-sm-12 h1 {
+  margin: 15px;
+  margin-left:0px; 
+  font-size:12px;
+  font-weight:700;
+  }
+}
+@media(max-width:320px){
+  .network .individual-invite .form-email input[type="submit"] {
+  font-size:12px;
+  }
+  .content-left.col-sm-12.dashboard .tab-content .network .col-sm-12 h1 {
+  margin: 10px;
+  margin-left:0px;
+  font-size:12px;
+  font-weight:700;
+}
+}
+@media(max-width:310px){
+  .content-left.col-sm-12.dashboard .tab-content .network .col-sm-12 h1 {
+  font-size:10px;
+    margin: 15px;
+  }
+}
+
+
+
+/*some more dashboard fixes*/
+.dashboard {
+  .media.bottom-bordered > div .btn.btn-cancel {
+  background-color: #2f2f2f;
+  position: absolute;
+  font-size: 12px;
+  height: 30px;
+  color: #FFF;
+  padding: 2px;
+  padding-right: 8px;
+  right: 0px;
+  top: -40px;
+  }
+  .media.bottom-bordered > div .btn.btn-cancel:hover {
+   color: #FFF;
+   opacity:.9;
+  }
+  .media.bottom-bordered > div .btn.btn-cancel img {
+  width: 45px;
+  padding: 8px;
+  }
+  .media.bottom-bordered > div a .btn.btn-cancel {
+  color: #FFF;
+  text-decoration: none;
+  }
+}
+/*saved items and creation zone and alliacnes tabs mobile fixes*/
+@media(max-width:767px){
+    .tab-pane.network,
+    .dashboard #creation,  
+    .dashboard #saved-items{
+    margin-top:70px;
+    }
+    .dashboard-portlet {
+      .header-content {
+        .nav-tabs {
+        display: block !important;
+        } 
+        .nav-tabs > li > a {
+        visibility:visible;
+        display:block;
+        font-size:0px;
+        height:60px;
+        padding:10px;
+        background-color: #FFF;
+        -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+        -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+        box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+        overflow: hidden;
+        margin-top: -38px;
+        border: 1px solid #d0d0d0;
+        }
+        .nav-tabs > li:nth-child(1) > a { 
+        background: url(/WinWinTheme-theme/images/assets/home.jpg) no-repeat 50% 0px #ffffff;
+        }
+        .nav-tabs > li:nth-child(2) > a {
+        background: url(/WinWinTheme-theme/images/assets/Mobile2.jpg) no-repeat 50% 0px #ffffff;
+        }
+        .nav-tabs > li:nth-child(3) > a {
+        background: url(/WinWinTheme-theme/images/assets/saved.jpg) no-repeat 50% 0px #ffffff;
+        }
+        .nav-tabs > li:nth-child(4) > a {
+        background: url(/WinWinTheme-theme/images/assets/saved2.jpg) no-repeat 50% 0px #ffffff;
+        }
+        .nav-tabs {
+        display: block !important;
+        }
+        .nav-tabs > li {
+        width: 20% !important;
+        z-index:100;
+        }
+      }
+    }
+    #p_p_id_dashboard_WAR_Membershipportlet_ .header-content .nav-tabs > li {
+    width: 10% !important;
+    float:left;
+    }
+    .mobileDash {
+      margin-top:50px;
+    }
+    .mobileDash .col-xs-6.col-md-3 {
+      top: 10px;
+      margin-left: -5px; 
+    }
+    .col-sm-12.dashboard {
+      margin-top: -75px;
+    }
+    .mobileDash .mobileDashImg img {
+      display: none;
+    }
+}

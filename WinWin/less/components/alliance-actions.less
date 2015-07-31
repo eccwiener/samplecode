@@ -1,0 +1,36 @@
+/***
+
+  ACTION LIST appear anywhere businesses are listed.
+  These actions include the following links:
+
+  1. Request Alliance
+  2. Send Message hello
+
+***/
+
+.result-action-list{
+  float: right;
+  li{
+    list-style:none;
+    float:left;
+    a{
+      padding: 0 5px;
+      cursor:pointer;
+
+      &.glyphicon-envelope,
+      &.glyphicon-time{
+        font-size: 14px;
+        top: 3px !important;
+      }
+    } // end of a
+
+  } // end of li
+
+} // end of result-action-list
+
+.result-action-list  li a:first-of-type{
+  border-left:0;
+}
+.result-action-list li:last-child a{
+  border-left: 1px solid #63ace1
+}

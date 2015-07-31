@@ -1,0 +1,246 @@
+
+
+/*START SIDEBAR */
+.ad-sidebar {
+  margin-left: 25px;
+  margin-top:0px;
+  width: 100%;
+  width: 305px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  .container {
+  width: 100%;
+  background-color: #FFF;
+  height: 100%; 
+  text-align: center;
+  }
+  .advertisment {
+  margin-top: -15px;
+  padding-bottom: 0px;
+  }
+  h2 {
+  font-family: 'TradeGothicNextW01-Ligh 693250';
+  color: white;
+  position: relative;
+  top: -20px;
+  width: 100%;
+  width: 305px;
+  font-weight: 100 !important;
+  right:15px;
+  text-align:left;
+  font-size: 14px;
+  height: 65px;
+  padding-top: 25px;
+  padding-left: 20px;
+  background-color: #2C3034;
+  }
+  #title-text {
+  font-size: 11px;
+  color: black;
+  font-weight: 900;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  img {
+  width: 160px;
+  height: 120px;
+  margin-left: 20%;
+  box-shadow: none;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  }
+  .modal-button button {
+  background-color: #428bca;
+  padding: 5px;
+  color: #fff;
+  position: relative;
+  bottom: 25px;
+  width: 75px;
+  height: 30px;
+  z-index: 1;
+  font-size: 8px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  box-shadow: :none;
+  border: none;
+  }
+  .modal-button button:hover {
+  background-color: #2b94d1; 
+  }
+}
+/*ad modal body */
+
+.ad-modal-body {
+  color: black;
+  padding: 20px; 
+  padding: 0px;
+    .btn-visit-site {
+    background-color: #428bca;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: :none;
+    border: none;
+    padding: 12px 16px;
+    margin-bottom: 15px;
+    width: 150px;
+    margin-right:5px;
+    margin-top: 15px;
+    }
+  p {
+  padding-left: 20px;
+  padding-right:20px;
+  }
+  .modal-footer {
+  background-color: #e9e9e9;
+  }
+  .btn-visit-site:hover {
+  opacity: .8;
+  }
+  .btn-visit-profile {
+  background-color: #ff9600;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: :none;
+  border: none;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  width: 150px;
+  }
+  .btn-visit-profile:hover {
+  opacity: .8;
+  }
+}
+.modal-header {
+  background-color: #84d2eb;
+  color: white;
+  height: 50px;
+  button {
+  color: white;
+  }
+  .modal-button {
+    .close { 
+    color: white;
+    opacity: 1;
+    }
+    .close:hover {
+    opacity: .5;
+    }
+  }
+}
+
+/*scroll effect start for ad sidebar */
+#sticky {
+    padding: 0.5ex;
+    min-width: 300px; 
+    max-width: 300px;
+}
+#sticky.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+  }
+
+/* Sidebar responsive start */
+
+@media (max-width: 992px) {
+.ad-sidebar {
+  margin-left: 0px;
+}
+  }
+/*responsive 980px */
+@media (max-width: 980px) {
+  .ad-modal-body img {
+    width: 500px;
+  }
+  #myModal{
+  margin-left:-500px;
+}
+}
+/*responsive 360px */
+@media (max-width: 360px) {
+  .ad-modal-body img {
+    width: 300px;
+  }
+  #myModal{
+  margin-left:0px;
+} 
+}
+/*responsive 320px */
+@media (max-width: 320px) {
+  .ad-modal-body img {
+    width: 200px;
+  }
+  #myModal{
+  margin-left:0px;
+}
+  .ad-modal-body p{
+    width:100%;
+  }
+}
+
+/* sidebar links */
+
+#ad-links{
+  text-align: center;
+  margin-left: -35px;
+  margin-top: -30px;
+
+li{
+  list-style: none;
+  display: inline;
+  margin: 5px;
+}
+ li:nth-child(odd){
+    padding-right:15px;
+  border-right:1px solid #dadada; 
+} 
+ a{
+  color: black;
+  font-size: 11px; 
+}
+ a:hover{
+  color:#2B94D1;
+  text-decoration:none;
+}
+}
+
+/* END Sidebar */
+
+/*  OLD CODE FOR SIDEBAR RESPONSIVE **/
+/*
+@media(max-width:992px){
+  .ad-sidebar .container {
+  width: 65%;
+  background-color: #ececec;
+  height: 100%;
+  margin-left: 25px;
+  text-align: center;
+} 
+} 
+*/
+@media (max-width: 992px) {
+  .ad-sidebar {
+    width: 76%;
+      margin-left: 15px;
+  }
+  .ad-sidebar .container {
+    background-color: #fff;
+    height: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .portlet-borderless.advertisement-portlet h2 {
+    width: 115%;
+  }
+  .ad-sidebar img {
+  border: 3px solid #f5f5f5;
+  width: 160px;
+  height: 120px;
+  margin-left: 10%;
+  box-shadow: none;
+}
+}

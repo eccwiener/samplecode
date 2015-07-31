@@ -1,0 +1,233 @@
+.business-blocks {
+  text-align: center;
+  margin-top: 20px; 
+  margin-left: -30px;
+  .single-business-block {
+  text-align: center;
+  width: 46%;
+  font-size: 12px;
+  max-height: 180px;
+  height: 180px;
+  float: left;
+  display: inline-block;
+  border: 1px solid #dadada;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  background-color: #FFF !important;
+  margin-bottom:20px;
+  margin-left: 20px;
+  padding-top:15px;
+  }
+  p {
+  font-size: 12px;
+  }
+  h4 {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  }
+  .single-business-block a {
+  color: #fff;
+  font-size: 11px;
+  font-weight: normal;
+  background: #4aa1d7;
+  padding: 10px 12px;
+  margin-top: 10px;
+  display: inline-block;
+  cursor: pointer;
+  }
+  .single-business-block .ng-scope {
+  font-weight: 999;
+  }
+}
+.see-more {
+  display: inline-block;
+  margin-top: 20px;
+  color: #000;
+}
+.see-more:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border-top: 7px solid #4aa1d7;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  vertical-align: middle;
+  margin-top: 6px;
+}
+
+/*business blocks web responsive*/
+@media (max-width: 992px) {
+  #creation h3,
+  #saved-items h3 {
+    font-size: 18px !important;
+  }
+  .savedItems .block-content {
+    margin-left: 0px;
+    width: 100%;
+    max-height: 400px;
+  }
+  .savedItems .single-block:nth-child(even) {
+    left: -26px;
+  }
+  .savedItems .single-block {
+    width: 35%;
+    left: -50px;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .savedItems .single-block p strong {
+    left: 0px;
+    position: relative;
+  }
+  .business-blocks h4 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .savedItems .single-block p strong {
+    left: 0px;
+    position: relative;
+  }
+}
+@media (max-width: 660px) {
+  .business-blocks .single-business-block {
+    text-align: center;
+    width:95%;
+    font-size: 12px;
+    height: 180px;
+    margin: 10px;
+    margin-left: 20px;
+  }
+  .business-blocks .single-business-block h4 {
+    font-size: 12px;
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+  .business-blocks .single-business-block p {
+    font-size: 12px;
+  }
+  .business-blocks .single-business-block a {
+    width: 80%;
+  }
+}
+@media (max-width: 570px) {
+  .single-block {
+    width: 50%;
+  }
+  .savedItems .single-block {
+    width: 33%;
+  }
+  .savedItems .single-block p strong {
+    left: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .small-mobile-fullWidth {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  .block-content {
+    margin-left: 75px;
+  }
+  .savedItems .block-content {
+    margin-left: 0px;
+  }
+  .savedItems .single-block:nth-child(2) p strong {
+    margin-bottom: 5px;
+  }
+  .savedItems .single-block:nth-child(4) {
+    padding: 0px;
+  }
+  .savedItems .single-block:nth-child(4) p strong {
+    margin-bottom: 5px;
+  }
+  .savedItems .single-block p strong {
+    margin-left: 0px;
+  }
+  .single-block {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: -35%;
+  }
+  .business-blocks h4 {
+    font-size: 12px;
+  }
+    .business-blocks .single-business-block {
+    text-align: center;
+    width:88%;
+    font-size: 12px;
+    height: 180px;
+    margin: 10px;
+    margin-left: 20px;
+  }
+  .content-left.col-sm-12.dashboard .tab-content .network .col-sm-12 h3{
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 445px) {
+  .savedItems .single-block {
+    width: 100%;
+    margin: 0px;
+    margin-left: 15px !important;
+    margin-top: 0px;
+    position: relative;
+    left: -10px;
+  }
+  .savedItems .single-block p strong {
+    left: 0%;
+  }
+  .savedItems .single-block:nth-child(even) {
+    left: -10px;
+  }
+}
+/*end new code*/
+@media (max-width: 360px) {
+  .business-blocks {
+    h4 {
+    font-size: 10px;
+  }
+    p {
+    margin-left: -90px;
+    font-size: 12px;
+  }
+}
+  .single-block {
+    margin-left: -40%;
+    p strong {
+    margin-left: 0px;
+    position: relative;
+  }
+}
+  .savedItems {
+    .block-content {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+    .block-content .single-block p {
+    width: 150px;
+    margin-bottom: 1px;
+  }
+    .single-block:nth-child(even) p strong {
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+    .single-block:nth-child(odd) p strong {
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}
+  .single-business-block p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+}

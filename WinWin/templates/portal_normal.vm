@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+#parse ($init)
+
+<script type="text/javascript" src="/Events-portlet/js/jquery.min.js"></script>
+
+#set($logFactory = $portal.getClass().forName('com.liferay.portal.kernel.log.LogFactoryUtil'))
+#set($log = $logFactory.getLog('portal_normal.vm'))
+
+<!--
+#set ($pvService = $serviceLocator.findService("Membership-portlet", "com.winwin.entities.membership.service.PageVisitLocalService"))
+$pvService.logPageVisit($user_id, $theme_display.getURLCurrent())
+-->
+					
+#set ($userCheck = $portal.getClass().forName("com.winwin.login.action.LoginPostAction"))
+#set ($userCheckValue = $userCheck.checkUser())
+
+#if ($is_signed_in && $the_title != "employee wizard" && $the_title != "WinWinUSA - Registration" && $the_title != "employee request pending" && $the_title != "Password Reminder" && $the_title != "New Password")
+	#if ($user.getExpandoBridge().hasAttribute("membershipType"))
+	
+		#set ($membershipType = $user.getExpandoBridge().getAttribute("membershipType"))
+		#set ($wizardCompleted = $user.getExpandoBridge().getAttribute("wizardCompleted"))
+		#set ($pendingRequest = $user.getExpandoBridge().getAttribute("employeeRequestPending"))
+		
+		#if ($membershipType == "employee")
+			#if (!$wizardCompleted)
+				<script type="text/JavaScript">
+					window.location.href = "/employee-wizard";
+				</script>
+			#end
+			#if ($pendingRequest)
+				<script type="text/JavaScript">			
+					window.location.href = "/employee-request-pending";
+				</script>
+			#end
+		#else
+			#if ($membershipType == "business")
+				#if (!$wizardCompleted)
+					<script type="text/JavaScript">
+						window.location.href = "/business-wizard";
+					</script>
+				#end
+			#end
+		#end
+	#end
+#end
+
+#if (($the_title == "homepage" || $the_title == "signin" || $the_title == "WinWinUSA - The National Business Social Network. Join Today!") && $is_signed_in)
+	<script type="text/javascript">
+		window.location.href = "/dashboard";
+	</script>
+#else
+	<html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
+		<head>
+
+			<title>$the_title</title>
+			<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+			$theme.include($top_head_include)
+	
+	        #parse ("$full_templates_path/winwin_head.vm")
+	            <link href='https://fonts.googleapis.com/css?family=Muli:300,400,400italic,300italic' rel='stylesheet' type='text/css'>
+	            <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+  				<link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/96840a49-70ea-445e-a170-bdf33e4b86bd.css"/>
+  			
+	  		<script> 
+			var userid = $user_id; // uid of logged in member goes here
+			document.cookie = "cc_data="+userid;
+			</script>
+
+  			<link type="text/css" href="/winwinchat/cometchatcss.php" rel="stylesheet" charset="utf-8">
+			<script type="text/javascript" src="/winwinchat/cometchatjs.php" charset="utf-8"></script>
+			
+
+			<script type='text/javascript'>
+			window.__wtw_lucky_site_id = 35579;
+			(function() {
+			var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
+			wa.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://cdn') + '.luckyorange.com/w.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+			 })();
+			</script>
+			
+			<meta name="msvalidate.01" content="F50DAD3CF989BBCF2958402994B9AB09" /> 
+		</head>
+	
+		<body
+		  #set($page_id = "homepage")
+		  #set($page_name = "signin")
+
+		  #if($the_title == "homepage" && !$is_signed_in)
+		    id="homepage"
+		  #end
+		  
+  		  #if($the_title == "signin" && !$is_signed_in)
+  		    id="signin"
+  		  #end
+
+		  class="$css_class"
+		>
+			<a href="#main-content" id="skip-to-content">#language ("skip-to-content")</a>
+			$theme.include($body_top_include)
+	
+			<!-- end .winwin_dockbar -->
+	
+		#if($is_signed_in)
+			<iframe height="1" width="1" style="display:none;" src="https://www.winwinchat.com/biscuit.php?cuid=$user_id"></iframe>
+
+	        #set ($headerPortletId = "header_WAR_Membershipportlet")
+            $velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
+            #set ($headerPortletContent = $theme.runtime($headerPortletId, "", $velocityPortletPreferences.toString()))
+            $headerPortletContent
+            $velocityPortletPreferences.reset()
+		#end
+	
+	        <!----
+	             Top Navigation When logged out
+	           ---->
+	
+	        #if(!$is_signed_in)
+	        <div class="top-navigation pattern-blk">
+	            <div class="navbar navbar-inverse" role="navigation" id="slide-nav">
+	                <div class="container">
+	                    <div class="navbar-login">
+	                        <a class="login-btn" data-redirect="false" href="/signin" id="" role="menuitem" title="">
+	                            <img src="/WinWinTheme-theme/images/assets/btn_login.jpg" />
+	                        </a>
+	                    </div>
+	                    <div class="navbar-header">
+	                        <button class="navbar-toggle">
+	                            <span class="sr-only">Toggle navigation</span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                            <span class="icon-bar"></span>
+	                        </button>
+	                    </div>
+	                    <div id="slidemenu">
+							<form class="navbar-form pre-reg acctSignIn" role="form">
+	                            <p><strong>Have an Account? Sign in Below.</strong></p>
+	                            <div class="form-group">
+	                                <label class="sr-only" for="email">Email Address</label>
+	                                <input type="text" placeholder="Email Address" name="email" id="email" class="form-control" />
+	                            </div>
+	                            <div class="form-group">
+	                                <label class="sr-only" for="password">Password</label>
+	                                    <input class="form-control" placeholder="Password" type="password" id="password"/>
+	                            </div>
+	                            <button type="submit" class="btn btn-warning">Sign In</button>
+	                            <div class="forget-pswd">
+	                                <a href="#">Forgot Password ?</a>
+	                            </div>
+	                            <p style="margin-top:30px;"><strong>New to WinWin?</strong></p>
+	                            <button type="button" class="btn btn-primary" id="SignUp">Sign Up</button>
+							</form>
+	                        <form class="navbar-form pre-reg acctSignUp" role="form">
+	                            <p><strong>Create An Account</strong></p>
+	                            <small>It's free and easy - just complete the form below.</small>
+	                            <div class="form-group">
+	                                <label class="sr-only" for="first_name">First Name</label>
+	                                <input type="text" placeholder="First Name" name="first_name" id="first_name" class="form-control" />
+	                            </div>
+	                            <div class="form-group">
+	                                <label class="sr-only" for="last_name">First Name</label>
+	                                <input type="text" placeholder="Last Name" name="last_name" id="last_name" class="form-control" />
+	                            </div>
+	                            <div class="form-group">
+	                                <label class="sr-only"  for="email">Email Address</label>
+	                                <input type="text" placeholder="Email Address" name="email" id="bus_email" class="form-control" />
+	                            </div>
+	                            <div class="form-group">
+	                                <label class="sr-only" for="password">Password</label>
+	                                <input class="form-control" placeholder="Password" name="password" type="password" id="act_password"/>
+	                            </div>
+	            
+	                            <button type="submit" class="btn btn-warning">Join Now</button>
+	                            <p style="margin-top:30px;"><strong>Already on WinWin?</strong></p>
+	                            <button type="button" class="btn btn-primary" id="SignIn">Sign In</button>
+	                        </form>
+	                        <ul class="nav navbar-nav navbar-right main-nav">
+	                            <li><a href="/features">Features</a></li>
+	                            <li><a href="/price">Pricing</a></li>
+	                            <li><a href="/faqs">FAQs</a></li>
+	                        </ul>
+	                    </div><!-- end .nav-collapse -->
+	                </div>
+	            </div>
+	        </div>
+	        #end
+	
+		     <div class="main-header-wrapper">
+		        <div  class="container">
+		       		#set ($headerPortletId = "header_WAR_HeaderPortletportlet")
+					$velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
+					#set ($headerPortletContent = $theme.runtime($headerPortletId, "", $velocityPortletPreferences.toString()))
+					$headerPortletContent
+					$velocityPortletPreferences.reset()
+	        	</div>
+	    	</div><!--end .main-header-wrapper -->
+	
+	        <!----
+	            Navigation When logged in, appear below the header portlet...
+	        ---->
+	
+	        #if($is_signed_in)
+	            <div class="top-navigation pattern-blk">
+	                <div class="container">
+	                    #if ($has_navigation || $is_signed_in)
+	                        ##parse ("$full_templates_path/winwin_navigation.vm")
+	                        #set ($navigationPortletId = "navigation_WAR_NavigationPortletportlet")
+	                        $velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
+	                        #set ($navigationPortletContent = $theme.runtime($navigationPortletId, "", $velocityPortletPreferences.toString()))
+	                        $navigationPortletContent
+	                        $velocityPortletPreferences.reset()
+	                    #end
+	                </div>
+	            </div> <!-- end .top-navigation -->
+	        #end
+	        #if($is_signed_in)
+	        <div class="sub-header">
+	            <div class="container">
+	                <div class="col-lg-12">
+	                    <div class="sub-header-icon icon-events"></div>
+	                    <img id="profileCover" class="profile-cover img-responsive" src="/WinWinTheme-theme/images/assets/profile-cover.png" style="display:none;"/>
+	                    <img  class="getting-started img-responsive" src="/WinWinTheme-theme/images/assets/getting_started_header.png"  style="display:none;"/>
+	                	<div id="noProfileCover" class="profile-default-cover" style="max-width:900px; height:170px; display:none;" > <!-- start cover --> 
+							<center>
+								<h1 style="color:white; font-size:40px; text-align:center; padding-top:30px;">
+									Want More From WinWin?
+								</h1>
+								<button class="btn-warning" style="margin-top:20px; border:none; font-weight:bold; font-size:18px; padding:10px 15px;" onClick="window.location.href='/price';">
+									Membership Options
+								</button>
+							</center>
+						</div>
+	                </div>
+	            </div>
+	        </div><!-- end sub-header -->
+	        #end
+	
+			<div class="main-content" id="page-content">
+	    		<div class="container"
+	    		#if($the_title == "homepage" && !$is_signed_in)
+	    		    id="homepage-container"
+	    		#end
+	    	>
+	    			<div id="content">
+	    				<nav id="breadcrumbs">#breadcrumbs()</nav>
+	    
+	    				#if ($selectable)
+	    					$theme.include($content_include)
+	    				#else
+	    					$portletDisplay.recycle()
+	    					$portletDisplay.setTitle($the_title)
+	    					$theme.wrapPortlet("portlet.vm", $content_include)
+	    				#end
+	    			</div>
+	    		</div><!-- end .container -->
+			</div><!-- end .main-content -->
+	
+			#set ($footerPortletId = "footer_WAR_FooterPortletportlet")
+			$velocityPortletPreferences.setValue("portlet-setup-show-borders", "false")
+			#set ($footerPortletContent = $theme.runtime($footerPortletId, "", $velocityPortletPreferences.toString()))
+			$footerPortletContent
+			$velocityPortletPreferences.reset()
+	
+			$theme.include($body_bottom_include)
+			$theme.include($bottom_include)
+		</body>
+	</html>
+#end

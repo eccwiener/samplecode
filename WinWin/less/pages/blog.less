@@ -1,0 +1,240 @@
+/*===[Blog Page] */
+/*#p_p_id_56_INSTANCE_pDlqc1vG7OIW_ {
+  .content-filter{
+  height:65px;
+    .form-group {
+     select#topics, input#keyword{
+      width:180px; 
+      height:35px; 
+      font-size:15px;
+      }
+    }
+  }
+}
+*/
+.blog-container {
+  width: 100%;
+  color: #656565;
+}
+.blog-container #blog-read-more {
+  float: left;
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 13px;
+}
+.blog-container h1 {
+  font-size: 18px;
+  color: #FF8C00;
+  font-weight: 900;
+}
+.blog-container h1 a {
+  color: #FF8C00;
+}
+.blog-container p {
+  font-size: 12px;
+  width: 100%;
+}
+.blog-container img {
+  float: right;
+  max-width:120px;
+  width: 30%;
+}
+.blog-container .related a {
+  color: #696969;
+  margin-left: 3%;
+}
+.blog-container .related h3 {
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 35px;
+}
+.blog-container .related ul {
+  width: 60%;
+}
+.blog-container .related .table-responsive {
+  border: 1px transparent solid;
+}
+.blog-container .related ul li {
+  width: 100%;
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 900;
+  font-style: italic;
+  border-left: transparent 1px solid;
+  border-bottom: transparent 1px solid;
+  border-right: transparent 1px solid;
+  text-indent: 20px;
+}
+.blog-container .blog-post {
+  margin-bottom: 0px;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9); 
+  box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  border:1px solid #aeaeae;
+  background-color: #FFF;
+    padding:10px 10px 40px 20px;
+}
+.blog-container .social {
+  margin-bottom: -35px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  width: 32%;
+  height: 100%;
+  visibility: hidden;
+}
+
+/*===sidebar start for blog page */
+.blog-container {
+  width: 100%;
+}
+.top-bar {
+  width: 150%;
+}
+.top-bar .content-filter #keyword {
+  font-size: 16px;
+  width: 100%;
+}
+.top-bar .content-filter .btn.btn-warning {
+  height: 35px;
+}
+#social-icons {
+  margin-top: 10px;
+  display: none;
+  width: 35px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  color: transparent;
+  margin-left: 5px;
+}
+#social-icons:hover {
+  opacity: .8;
+}
+.woman-image img {
+  position: relative;
+  display: none;
+  z-index: 1;
+  width: 50%;
+  left: 50%;
+}
+.social-icons {
+  display: none;
+  margin-top: 20px;
+}
+.blog-side {
+  z-index: 2;
+  top: -50px;
+  position: relative;
+}
+.blog-side a {
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  border-color: transparent;
+  color: #5b5b5b;
+  margin-bottom: 10px;
+}
+.blog-side .list-group {
+  margin-top:-5px;
+}
+.blog-side #selected-posting a {
+  color: #ea7501;
+}
+.blog-side .list-group-item {
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9); 
+  box-shadow: 1px 1px 2px 1px rgba(174, 174, 174, 0.9);
+  border:1px solid #aeaeae;
+  background-color: #FFF;
+}
+
+.arrow-orange {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #ea7501;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.arrow-gray {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #d5d5d5;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.previous-posts #more-posts {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #4BA5DA;
+  background-color: transparent;
+}
+.previous-posts p {
+  margin-left: 20px;
+}
+.previous-posts .content-filter {
+  font-size: 16px;
+}
+.previous-posts #topics {
+  background: 5px 19% transparent;
+  height: 48px;
+  padding-right: 35px;
+}
+.previous-posts #keyword {
+  height: 48px;
+}
+
+
+ /*==== Responsive Start for Blog  */
+@media (max-width: 767px) {
+.woman-image img{
+ width:0%; 
+}
+.content-filter {
+  .styled-select {
+    width:100%;
+    background-color: #FFF;
+    padding: 0px;
+  }
+  .form-control#keyword{
+  width:100%;
+  }
+  .social-icons{
+  margin-top:20px;
+  }
+}
+}
+
+
+@media (max-width:360px){
+  #winwin-logo{
+    margin-left:20px;
+  }
+ .blog-container {
+
+  p{
+   width:100%;
+  }
+  .related {
+    ul{
+    max-width:100%;
+    }
+    ul li{
+    max-width:100%;
+    text-indent:1px;
+    font-size:10px;
+    }
+  }
+}
+.previous-posts a{
+  font-size:10px;
+}
+}
+
+ 

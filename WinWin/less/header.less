@@ -1,0 +1,337 @@
+.winwin_dockbar{
+	z-index: -9999;
+	position: relative;
+  width:90%;
+}
+@media(max-width:767px){
+	.winwin_dockbar{
+		z-index: 9999;
+		position: relative;
+	}
+}
+.header-title {
+  font-family: 'Century Gothic W01';
+  color: #fff !important;
+  position: relative !important;
+  top: -15px !important;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center !important;
+  font-weight: normal !important;
+}
+@media (max-width: 992px) {
+  .header-title {
+    top: 7px !important;
+    left: -10px !important;
+    font-size: 20px !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+.header-title {
+  font-family: 'Century Gothic W01';
+  color: #fff !important;
+  position: absolute !important;
+  top: 10px !important;
+  font-size: 20px;
+  line-height: 28px;
+  left: 0px !important;
+  text-align: center !important;
+  font-weight: normal !important;
+  }
+}
+@media (max-width: 600px) {
+  .header-title {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 535px) {
+  .header-title {
+    margin-top:0px;
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 480px) {
+  .header-title {
+    top: 0px !important;
+    left: 0px !important;
+    font-size: 15px !important;
+    line-height: 16px !important;
+  }
+}
+@media (max-width: 400px) {
+  .header-title {
+    left: 0px !important;
+    font-size: 12px !important;
+    line-height: 12px !important;
+  }
+}
+/*=============== [ Header Signed Out ]*/
+.signed-out #winwin-logo {
+  float: left;
+  position: relative;
+  bottom: 50px;
+}
+/*=============== [ Header Signed In ]*/
+.signed-in{
+    background-color: #DFDFDF;
+  #winwin-logo{
+    position: absolute;
+    z-index: 1;
+    a img{
+     width: 60px; 
+    margin-left:5px; 
+    }
+  }
+  .portlet-borderless-container{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .main-header-wrapper{
+      display: none;
+  } // header wrapper
+  .pattern-blk,
+  .navbar-inverse{
+    background: #292929;
+  }
+  /*Logged in navigation*/
+    .nav{
+      &.navbar-nav{
+        &.main-user-nav {
+          margin-left: 5%; 
+          li a{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+} // if signed in
+    @media(max-width:767px){
+      .signed-in{
+        .nav{
+          &.navbar-nav{
+            &.main-user-nav {
+              margin-left: 0;
+              li{
+                float:none;
+              }
+            }
+          }
+        }
+      }
+      .navbar-inverse{
+      padding-bottom: 10px;
+    }
+  }
+    @media(max-wdith:480px){
+    	.signed-in{
+    		.header-title{
+    			font-size: 1.1em;
+				padding-left: 0;
+				top: 15px;
+				right: 35px;
+    		}
+    		.social-media-icons{
+    		display:none;
+    		}
+    	}
+    }
+.main-content{
+  padding: 30px 0;
+  margin: 30px 0;
+}
+.signed-in .sub-header{
+  background: url(../images/assets/header.png) repeat;
+}
+.sub-header{
+  min-height: 74px;
+    background-color: #6aa0c2;
+  /*background: url(../images/assets/header.png) repeat; */
+  box-shadow: inset 0px 0px 7px 0px;
+  -webkit-box-shadow: inset 0px 0px 7px 0px;
+  -moz-box-shadow: inset 0px 0px 7px 0px; 
+
+  /*=============== [Sub Header Icons] */
+  .sub-header-icon{
+    height:75px;
+    float: right;
+
+  /*========== [Icons event]*/
+    &.icon-events{
+     // display: none;
+     //background-image: url("../images/subHeaderIcons/icon_events.png") !important; 
+    }
+  }
+}
+
+/*========= [User Navigation]*/
+.navbar.logged-in-navbar {
+  margin-bottom: 0;
+  background: url("../images/assets/user-navbg.png");
+.user-nav > .messages > a,
+.user-nav > .notifications > a {
+  color: #fff;
+  font-size: 18px;
+  cursor:pointer;
+}
+.user-nav > .messages {
+  background-color: #4ba5da;
+  margin-right: 1px;
+}
+.user-nav > .messages:hover,
+.user-nav > .messages:focus {
+  background-color: #4192C2;
+}
+.user-nav > .notifications {
+  background-color: #818181;
+}
+.user-nav > .notifications:hover {
+  background-color: #737373;
+}
+.user-nav {
+  .nav-user-photo {
+  margin: -4px 8px 0 0;
+  border-radius: 100%;
+  border: 2px solid #FFF;
+  max-width: 40px;
+}
+.white {
+.dropdown-toggle {
+  display: block;
+  line-height: inherit;
+  height: 100%;
+  width: auto;
+  min-width: 50px;
+  padding:3px;
+  position: relative;
+}
+img {
+  margin: -4px 8px 0 0;
+  border-radius: 100%;
+  border: 2px solid #FFF;
+  max-width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  min-width:40px;
+}
+.user-info {
+  color: #000;
+  max-width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: top;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  line-height: 15px;
+  position: relative;
+  top:0;
+}
+.user-info:hover {
+  color: #777;
+}
+.user-info small {
+  display: block;
+  font-size: 75%;
+}
+.gears {
+  vertical-align: middle;
+}
+}
+}
+}
+
+
+.aui .navigation-portlet .portlet-borderless-container{
+  padding:0;
+  margin-bottom:0;
+}
+
+.login-btn img{
+  height:50px;
+}
+
+
+@media(max-width:600px){
+  .navbar.logged-in-navbar {
+    .user-nav {
+      .white {
+        .dropdown-toggle {
+          max-width:200px; 
+          right:0px; 
+          }
+          .user-info{
+            color: #000;
+            max-width: 63%;
+            text-overflow: ellipsis;
+            margin-right: 0px;
+            padding-right:0px; 
+            padding-bottom: 5px;
+            line-height: 10px;
+            font-size:70%;
+            position: relative;
+            top: 5px;
+            left:-5px;
+          strong,  small, p{
+          position:relative;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width:435px){
+  .navbar.logged-in-navbar {
+    .user-nav {
+      .white {
+          .user-info{
+          line-height:10px; 
+          font-size:65%;
+          } 
+        .dropdown-toggle {
+          max-width:150px; 
+          right:0px; 
+          max-height:40px; 
+          }
+        }
+      .white > a > i{
+      float:right; 
+      position:absolute;
+      }
+    }
+  }
+
+}
+
+@media(max-width:380px){
+  .navbar.logged-in-navbar {
+    .user-nav {
+      .white {
+        .dropdown-toggle {
+        max-width:150px;  
+        right:0px; 
+        max-height:40px; 
+       }
+      .user-info{
+      line-height:10px; 
+      font-size:65%;
+      max-width:50%;
+      }  
+    }
+    .white > a > i{
+    float:right; 
+    position:absolute;
+    }
+  }
+}
+.signed-in #winwin-logo a img{
+  margin-left:-30px;
+}
+} 
+@media(max-width:330px){
+.signed-in #winwin-logo a img{
+  margin-top:60px;
+}
+}

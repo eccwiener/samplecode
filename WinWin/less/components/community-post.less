@@ -1,0 +1,120 @@
+/***
+
+  COMMUNITY POSTS appears under the following sections
+
+    1. Creation Zone
+    2. Community Posts in profile
+
+
+  community posts are a grid of block with icons.
+
+***/
+
+
+.creation .block-content {
+  width: 100%;
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 0;
+  height: 440px;
+  padding: 5px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  background-color: #FFF;
+}
+.savedItems .block-content {
+  margin-top: 0px;
+  margin-left: 10px;
+  text-align: justify;
+  height: 440px;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  box-shadow: 1px 1px 2px 1px rgba(174,174,174,0.9);
+  background-color: #FFF;
+  min-width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left:40px;
+  margin:10px;
+}
+@media (max-width: 1200px) {
+  .creation .block-content {
+    height: 650px;
+    margin-left: 0px;
+  }
+  .savedItems .block-content {
+    height: 450px;
+  }
+}
+@media (max-width: 992px) {
+  .creation .block-content,
+  .savedItems .block-content {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width:768px) {
+  .savedItems .block-content {
+    min-height: 440px;
+  }
+}
+@media (max-width: 480px) {
+  .creation .block-content {
+    height: 1300px;
+  }
+  .savedItems .block-content {
+    min-height: 800px;
+  }
+  .creation .block-content .single-block,
+  .savedItems .block-content .single-block {
+    margin-left: 0px;
+  }
+  .savedItems .block-content .single-block {
+    left: -40px;
+  }
+}
+
+.block-content {
+  width: 100%;
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 0;
+  height: 800px;
+}
+.block-content:after {
+  content: "";
+  display: inline-block;
+  width: 0%;
+}
+.single-block {
+  font-size: 14px;
+  text-align: center;
+  color: #6d6d6d;
+  font-weight: bold;
+  position: relative;
+  float: left;
+  z-index: 2;
+  margin-bottom: 35px;
+  padding: 0 8px;
+}
+.single-block.active .icons-wrapper,
+.single-block:hover .icons-wrapper,
+.single-block:focus .icons-wrapper {
+  cursor: pointer;
+  background: #408fd2;
+}
+.icons-wrapper {
+  display: table;
+  border: 10px solid #eaeaea;
+  background: #c2c2c2;
+  width: 152px;
+  height: 152px;
+  margin: 0 auto;
+}
+.icons-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+

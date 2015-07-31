@@ -1,0 +1,314 @@
+<div class="navbar navbar-default logged-in-navbar">
+    <div class="container">
+            <ul class="nav navbar-nav pull-right user-nav">
+
+
+                <li class="dropdown messages notify">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-envelope icon-animated-vertical"></i>
+                        <span class="badge badge-warning">3</span>
+                    </a>
+
+                    <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                        <li class="dropdown-header">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            "6" Unread Messages
+                        </li>
+
+                        <li class="dropdown-content">
+                            <div class="nano">
+                                <div class="nano-content">
+                                <ul class="dropdown-menu dropdown-navbar">
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/thrivesolo/128.jpg" class="msg-photo" alt="Alex's Avatar">
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Ray:</span>
+														Ciao sociis natoque penatibus et auctor ...
+													</span>
+
+													<span class="msg-time">
+														<i class="glyphicon glyphicon-time"></i>
+														<span>a moment ago</span>
+													</span>
+												</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/ateneupopular/128.jpg" class="msg-photo" alt="Susan's Avatar">
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Jay:</span>
+														Vestibulum id ligula porta felis euismod ...
+													</span>
+
+													<span class="msg-time">
+														<i class="glyphicon glyphicon-time"></i>
+														<span>20 minutes ago</span>
+													</span>
+												</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/128.jpg" class="msg-photo" alt="Bob's Avatar">
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Eddie:</span>
+														Nullam quis risus eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="glyphicon glyphicon-time"></i>
+														<span>3:15 pm</span>
+													</span>
+												</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/i3tef/128.jpg" class="msg-photo" alt="Kate's Avatar">
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Rory:</span>
+														Ciao sociis natoque eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="glyphicon glyphicon-time"></i>
+														<span>1:33 pm</span>
+													</span>
+												</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/grrr_nl/128.jpg" class="msg-photo" alt="Kate's Avatar">
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Joe:</span>
+														Ciao sociis natoque eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="glyphicon glyphicon-time"></i>
+														<span>1:33 pm</span>
+													</span>
+												</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/igorgarybaldi/128.jpg" class="msg-photo" alt="Kate's Avatar">
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Kim:</span>
+														Ciao sociis natoque eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="glyphicon glyphicon-time"></i>
+														<span>1:33 pm</span>
+													</span>
+												</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </li>
+
+                        <li class="dropdown-footer">
+                            <a href="inbox.html">
+                                See all messages
+                                <i class="glyphicon glyphicon-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li><!-- end .messages -->
+
+                <li class="dropdown notifications notify">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-bell icon-animated-bell"></i>
+                        <span class="badge badge-warning">9</span>
+                    </a>
+
+                    <ul class="dropdown-menu-right dropdown-navbar navbar-pink
+
+                    dropdown-menu dropdown-caret dropdown-close">
+                        <li class="dropdown-header">
+                            <i class="glyphicon glyphicon-warning-sign"></i>
+                                Notifications
+                        </li>
+
+                        <li class="dropdown-content">
+                                    <ul class="dropdown-menu dropdown-navbar">
+                                        <li>
+                                            <a href="#">
+                                                <i class="btn btn-xs btn-primary glyphicon glyphicon-user"></i>
+                                                <span class="msg-body">
+                                                    Basics Landscaping approved the alliance request!
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="btn btn-xs btn-primary glyphicon glyphicon-user"></i>
+                                                    <span class="msg-body">
+                                                        OpenTemp approved the alliance request!
+                                                    </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="btn btn-xs btn-primary glyphicon glyphicon-user"></i>
+                                                    <span class="msg-body">
+                                                        Rory Graphics approved the alliance request!
+                                                    </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                        </li>
+
+                        <li class="dropdown-footer">
+                            <a href="inbox.html">
+                                See all notifications
+                                <i class="glyphicon glyphicon-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li><!-- end .messages -->
+
+                <li class="white">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <img class="nav-user-photo" src="https://s3.amazonaws.com/uifaces/faces/twitter/jamiebrittain/128.jpg" alt="GSD Team Co">
+								<span class="user-info">
+									<small>Welcome,</small>
+									    <strong>GSD Team Co</strong>
+								</span>
+
+                        <i class="glyphicon glyphicon-cog gears"></i>
+                    </a>
+
+                    <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>
+                                Our Profile
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-cog"></i>
+                                Account Settings
+                            </a>
+                        </li>
+
+
+                        <!--
+                            This switch account link will only be present for when a user has multiple accounts
+                         -->
+                        <li class="accounts">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-log-out"></i>
+                                logout
+                            </a>
+                        </li>
+                    </ul>
+                </li><!-- end .user-settings -->
+
+
+            </ul>
+    </div>
+</div><!-- end .logged-in-navbar -->
+
+
+<div class="main-header-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <div class="col-xs-2">
+                    <div id="winwin-logo">
+                        <a href="/" title="Home" id="logo">
+                            <img src="/WinWinTheme-theme/images/assets/logo.png" width="125" height="110" alt="Home">
+                        </a>
+                    </div>
+                </div>
+                <h1 class="header-title">Changing how businesses work together. <span style="font-size: 0.4em; vertical-align: super;">TM</span></h1>
+
+                <div class="social-media-icons">
+                    <ul class="nav nav-pills">
+                        <li><a href="/about" target="_blank"><img src="/WinWinTheme-theme/images/assets/header/social_icon_winwin.png" alt=""/></a></li>
+                        <li><a href="https://www.facebook.com/WinWinUSA" target="_blank"><img src="/WinWinTheme-theme/images/assets/header/social_icon_fb.png" alt=""/></a></li>
+                        <li><a href="https://twitter.com/_winwinusa" target="_blank"><img src="/WinWinTheme-theme/images/assets/header/social_icon_twitter.png" alt=""/></a></li>
+                        <li><a href="https://www.youtube.com/GoToWinWinUSA" target="_blank"><img src="/WinWinTheme-theme/images/assets/header/social_icon_youtube.png" alt=""/></a></li>
+                        <li><a href="https://www.linkedin.com/company/win-win-solutions" target="_blank"><img src="/WinWinTheme-theme/images/assets/header/social_icon_linkedin.png" alt=""/></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div><!-- end .top-header-wrapper -->
+
+<!-- Logged in nav bar
+            ============================= -->
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav main-user-nav">
+                <li><a href="#" id="nav-btn">Home</a></li>
+                <li><a href="#" id="nav-btn">Alliances</a></li>
+                        <li><a href="#" id="nav-btn">B2B Exchange</a></li>
+                        <li><a href="#" id="nav-btn">Co-op Marketing</a></li>
+                <li><a href="" id="nav-btn">Events</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="nav-btn">FAQs</a></li>
+                        <li><a href="#" id="nav-btn">Getting Started</a></li>
+                        <li><a href="" id="nav-btn">Announcements</a></li>
+                        <li><a href="" id="nav-btn">Business Wisdom</a></li>
+                        <li><a href="" id="nav-btn">Invite New Members</a></li>
+                        <li><a href="" id="nav-btn">Verification Center</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="search" placeholder="Search">
+                </div>
+            </form>
+        </div><!-- end .nav-collapse -->
+    </div>
+</div><!-- end .navbar -->
+
+<script type="text/javascript" src="/WinWinTheme-theme/js/vendor/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/WinWinTheme-theme/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/WinWinTheme-theme/js/vendor/jquery.nanoscroller.min.js"></script>
+<script type="text/javascript">
+
+    $(".dropdown-navbar").bind("mouseover", function(){
+        $(".nano").nanoScroller();
+    });
+
+
+</script>
